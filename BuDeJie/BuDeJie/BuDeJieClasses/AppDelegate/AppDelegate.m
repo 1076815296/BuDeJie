@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "ZWJTabBarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -21,35 +23,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     //2.创建窗口根控制器
-    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
+    ZWJTabBarController *tabBarVC = [[ZWJTabBarController alloc] init];
     self.window.rootViewController = tabBarVC;
-    
-    //添加导航控制器
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor redColor];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    [tabBarVC addChildViewController:nav];
-    
-    UIViewController *vc1 = [[UIViewController alloc] init];
-    vc1.view.backgroundColor = [UIColor greenColor];
-    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc1];
-    [tabBarVC addChildViewController:nav1];
-    
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    vc2.view.backgroundColor = [UIColor blueColor];
-    [tabBarVC addChildViewController:vc2];
-    
-    UIViewController *vc3 = [[UIViewController alloc] init];
-    vc3.view.backgroundColor = [UIColor orangeColor];
-    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:vc3];
-    [tabBarVC addChildViewController:nav3];
-    
-    UIViewController *vc4 = [[UIViewController alloc] init];
-    vc4.view.backgroundColor = [UIColor yellowColor];
-    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:vc4];
-    [tabBarVC addChildViewController:nav4];
-    
-    
     
     
     //3.显示窗口
