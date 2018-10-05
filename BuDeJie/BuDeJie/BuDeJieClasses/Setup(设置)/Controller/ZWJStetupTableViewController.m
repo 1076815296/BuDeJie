@@ -1,65 +1,79 @@
 //
-//  ZWJMeViewController.m
+//  ZWJStetupTableViewController.m
 //  BuDeJie
 //
-//  Created by 林泉 on 2018/10/4.
+//  Created by 林泉 on 2018/10/5.
 //  Copyright © 2018年 ZWJ. All rights reserved.
 //
 
-#import "ZWJMeViewController.h"
 #import "ZWJStetupTableViewController.h"
+#import "ZWJBackView.h"
 
-
-@interface ZWJMeViewController ()
+@interface ZWJStetupTableViewController ()
 
 @end
 
-@implementation ZWJMeViewController
+@implementation ZWJStetupTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
-    [self setupNavBar];
-   
+    
+    //封装进ZWJBackView中
+    /*//设置导航条返回按钮 获取当前控制器的navgationItem的left
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setTitle:@"返回" forState:UIControlStateNormal];
+    [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [backButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [backButton setImage:[UIImage imageNamed:@"navigationButtonReturn"] forState:UIControlStateNormal];
+    [backButton setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
+    [backButton sizeToFit];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    
+    //CGRect frame = backButton.frame;
+    //frame.origin.x -= 10;
+    //backButton.frame = frame;
+    backButton.zwj_x -= 10;*/
+    
+    
+    //ZWJBackView *view = [[ZWJBackView alloc] initWithFrame:backButton.bounds];
+    
+    ZWJBackView *view = [ZWJBackView viewButtonAddTarget:self action:@selector(back) title:@"返回" image:[UIImage imageNamed:@"navigationButtonReturn"] imageClick:[UIImage imageNamed:@"navigationButtonReturnClick"]];
+    
+    //[view addSubview:backButton];
+    
+    
+    //为啥viewv不是self.navigationController.navigationBar的子控件
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:view];
+    
+    
+    
+    
+    
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
 }
 
-- (void)setupNavBar{
-    //设置导航条内容 => 栈顶控制器的navigationItem决定,导航条本身不能决定,所以导航条必须添加控制器
-    self.navigationItem.title = @"我的";
-    
-    //不要在导航控制器的根控制器下去设置self.title
-    //self.title = @"我的";
-    
-    //右边
-    //夜间模式
-    //按钮选中状态必须通过代码去设置
-    UIBarButtonItem *nightMode = [UIBarButtonItem itmeWithImageName:[UIImage imageNamed:@"mine-moon-icon"] selImage:[UIImage imageNamed:@"mine-moon-icon-click"] Target:self action:@selector(nightClick:)];
-    
-    UIBarButtonItem *setting = [UIBarButtonItem itmeWithImageName:[UIImage imageNamed:@"mine-setting-icon"] highImage:[UIImage imageNamed:@"mine-setting-icon-click"] Target:self action:@selector(settingClick)];
-    
-    self.navigationItem.rightBarButtonItems = @[setting,nightMode];
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
     
     
 }
 
-- (void)nightClick:(UIButton *)btn {
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
-    btn.selected = !btn.selected;
 }
 
-- (void)settingClick {
+#pragma mark -----------------------
+#pragma mark 返回
+- (void)back {
     
-    //跳转到设置界面
-    ZWJStetupTableViewController *steupVC = [[ZWJStetupTableViewController alloc] init];
-    /*
-     隐藏底部条
-     这个属性的条件一定要在push之前设置
-     */
-    steupVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:steupVC animated:YES];
-    
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
+
 
 
 #pragma mark - Table view data source

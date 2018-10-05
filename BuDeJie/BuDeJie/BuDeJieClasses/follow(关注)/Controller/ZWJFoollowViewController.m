@@ -15,8 +15,16 @@
 
 @implementation ZWJFoollowViewController
 
+//设置导航条标题字体
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+    
     self.view.backgroundColor = [UIColor orangeColor];
     [self setupNavBar];
 }

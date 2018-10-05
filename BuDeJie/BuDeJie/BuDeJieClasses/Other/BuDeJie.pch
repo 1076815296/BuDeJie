@@ -1,0 +1,30 @@
+//
+//  BuDeJie.pch
+//  BuDeJie
+//
+//  Created by 林泉 on 2018/10/4.
+//  Copyright © 2018年 ZWJ. All rights reserved.
+//
+
+/*
+ pch里面的东西,被所有的文件共享
+ 1.存放公用头文件和w宏,自定义Log
+ 
+ */
+#import "UIBarButtonItem+Itme.h"
+#import "UIView+Frame.h"
+
+
+//自定义log
+#ifdef DEBUG //调试
+
+#define ZWJLog(...) NSLog(__VA_ARGS__)
+
+
+#else
+
+#define ZWJLog(...)
+
+#endif
+
+

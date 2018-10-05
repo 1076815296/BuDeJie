@@ -20,6 +20,11 @@
 		3403312F2165E7510024FF7F /* UIImage+Rendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403312E2165E7510024FF7F /* UIImage+Rendering.m */; };
 		340331322165F18C0024FF7F /* UITabBarItem+Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 340331312165F18C0024FF7F /* UITabBarItem+Font.m */; };
 		3403313821660CDC0024FF7F /* UIBarButtonItem+Itme.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403313721660CDC0024FF7F /* UIBarButtonItem+Itme.m */; };
+		3403313D216754250024FF7F /* ZWJINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403313C216754250024FF7F /* ZWJINavigationController.m */; };
+		340331442167586D0024FF7F /* ZWJStetupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340331432167586D0024FF7F /* ZWJStetupTableViewController.m */; };
+		340331472167625E0024FF7F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 340331462167625E0024FF7F /* UIView+Frame.m */; };
+		3420D99121676CAD0031D400 /* ZWJNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420D99021676CAD0031D400 /* ZWJNavigationBar.m */; };
+		3420D99421676EAA0031D400 /* ZWJBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420D99321676EAA0031D400 /* ZWJBackView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +54,16 @@
 		3403313621660CDC0024FF7F /* UIBarButtonItem+Itme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Itme.h"; sourceTree = "<group>"; };
 		3403313721660CDC0024FF7F /* UIBarButtonItem+Itme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Itme.m"; sourceTree = "<group>"; };
 		3403313A216632E90024FF7F /* BuDeJie.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuDeJie.pch; sourceTree = "<group>"; };
+		3403313B216754250024FF7F /* ZWJINavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJINavigationController.h; sourceTree = "<group>"; };
+		3403313C216754250024FF7F /* ZWJINavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJINavigationController.m; sourceTree = "<group>"; };
+		340331422167586D0024FF7F /* ZWJStetupTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJStetupTableViewController.h; sourceTree = "<group>"; };
+		340331432167586D0024FF7F /* ZWJStetupTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJStetupTableViewController.m; sourceTree = "<group>"; };
+		340331452167625E0024FF7F /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		340331462167625E0024FF7F /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		3420D98F21676CAD0031D400 /* ZWJNavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJNavigationBar.h; sourceTree = "<group>"; };
+		3420D99021676CAD0031D400 /* ZWJNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJNavigationBar.m; sourceTree = "<group>"; };
+		3420D99221676EAA0031D400 /* ZWJBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJBackView.h; sourceTree = "<group>"; };
+		3420D99321676EAA0031D400 /* ZWJBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJBackView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +107,7 @@
 		340330FA2165A8E10024FF7F /* BuDeJieClasses */ = {
 			isa = PBXGroup;
 			children = (
+				3403313E216758300024FF7F /* Setup(设置) */,
 				340330FB2165A8E10024FF7F /* follow(关注) */,
 				340330FF2165A8E10024FF7F /* Essence(精华) */,
 				340331032165A8E10024FF7F /* Other */,
@@ -228,6 +244,8 @@
 			children = (
 				340331292165B0070024FF7F /* ZWJTabBarController.h */,
 				3403312A2165B0070024FF7F /* ZWJTabBarController.m */,
+				3403313B216754250024FF7F /* ZWJINavigationController.h */,
+				3403313C216754250024FF7F /* ZWJINavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,6 +260,10 @@
 		3403310C2165A8E10024FF7F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3420D98F21676CAD0031D400 /* ZWJNavigationBar.h */,
+				3420D99021676CAD0031D400 /* ZWJNavigationBar.m */,
+				3420D99221676EAA0031D400 /* ZWJBackView.h */,
+				3420D99321676EAA0031D400 /* ZWJBackView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,8 +352,43 @@
 				340331312165F18C0024FF7F /* UITabBarItem+Font.m */,
 				3403313621660CDC0024FF7F /* UIBarButtonItem+Itme.h */,
 				3403313721660CDC0024FF7F /* UIBarButtonItem+Itme.m */,
+				340331452167625E0024FF7F /* UIView+Frame.h */,
+				340331462167625E0024FF7F /* UIView+Frame.m */,
 			);
 			path = "Category(类别)";
+			sourceTree = "<group>";
+		};
+		3403313E216758300024FF7F /* Setup(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				3403313F216758300024FF7F /* Controller */,
+				34033140216758300024FF7F /* Model */,
+				34033141216758300024FF7F /* View */,
+			);
+			path = "Setup(设置)";
+			sourceTree = "<group>";
+		};
+		3403313F216758300024FF7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				340331422167586D0024FF7F /* ZWJStetupTableViewController.h */,
+				340331432167586D0024FF7F /* ZWJStetupTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34033140216758300024FF7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34033141216758300024FF7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,13 +464,18 @@
 				3403311F2165AD710024FF7F /* ZWJFoollowViewController.m in Sources */,
 				3403313821660CDC0024FF7F /* UIBarButtonItem+Itme.m in Sources */,
 				340331192165A8E10024FF7F /* AppDelegate.m in Sources */,
+				340331442167586D0024FF7F /* ZWJStetupTableViewController.m in Sources */,
 				3403312B2165B0070024FF7F /* ZWJTabBarController.m in Sources */,
+				3403313D216754250024FF7F /* ZWJINavigationController.m in Sources */,
 				3403312F2165E7510024FF7F /* UIImage+Rendering.m in Sources */,
 				340331282165AED00024FF7F /* ZWJReleasseViewController.m in Sources */,
 				340331252165ADD30024FF7F /* ZWJNewViewController.m in Sources */,
+				340331472167625E0024FF7F /* UIView+Frame.m in Sources */,
+				3420D99121676CAD0031D400 /* ZWJNavigationBar.m in Sources */,
 				340331222165ADA60024FF7F /* ZWJMeViewController.m in Sources */,
 				340331182165A8E10024FF7F /* main.m in Sources */,
 				340331322165F18C0024FF7F /* UITabBarItem+Font.m in Sources */,
+				3420D99421676EAA0031D400 /* ZWJBackView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

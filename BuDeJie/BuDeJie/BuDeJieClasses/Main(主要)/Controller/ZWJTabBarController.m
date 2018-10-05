@@ -14,6 +14,7 @@
 #import "ZWJReleasseViewController.h"
 #import "UIImage+Rendering.h"
 #import "UITabBarItem+Font.h"
+#import "ZWJINavigationController.h"
 
 /*
  封装:谁的事情谁管理,让业务逻辑非常清晰
@@ -120,7 +121,7 @@
     //设置UITabBar上所有按钮内容
     [self setupAlltabBarButton];
     
-    NSLog(@"%@",self.tabBar.subviews);
+
     
 }
 
@@ -199,12 +200,12 @@
     //精华
     ZWJEssenceViewController *vc = [[ZWJEssenceViewController alloc] init];
     //vc.view.backgroundColor = [UIColor redColor]; 不要在这边设置 不然每次颜色设置完控制器都会被加载z,在控制器中设置
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    ZWJINavigationController *nav = [[ZWJINavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
     
     //新帖
     ZWJNewViewController *vc1 = [[ZWJNewViewController alloc] init];
-    UINavigationController *nav1 = [[UINavigationController alloc] initWithRootViewController:vc1];
+    ZWJINavigationController *nav1 = [[ZWJINavigationController alloc] initWithRootViewController:vc1];
     [self addChildViewController:nav1];
     
     //发布
@@ -213,12 +214,12 @@
     
     //关注
     ZWJFoollowViewController *vc3 = [[ZWJFoollowViewController alloc] init];
-    UINavigationController *nav3 = [[UINavigationController alloc] initWithRootViewController:vc3];
+    ZWJINavigationController *nav3 = [[ZWJINavigationController alloc] initWithRootViewController:vc3];
     [self addChildViewController:nav3];
     
     //我
     ZWJMeViewController *vc4 = [[ZWJMeViewController alloc] init];
-    UINavigationController *nav4 = [[UINavigationController alloc] initWithRootViewController:vc4];
+    ZWJINavigationController *nav4 = [[ZWJINavigationController alloc] initWithRootViewController:vc4];
     [self addChildViewController:nav4];
     
 }
