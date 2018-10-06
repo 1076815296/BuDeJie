@@ -7,6 +7,7 @@
 //
 
 #import "ZWJNewViewController.h"
+#import "ZWJSubTagTableViewController.h"
 
 
 @interface ZWJNewViewController ()
@@ -37,8 +38,8 @@
 - (void)subClick {
     
     NSLog(@"订阅标签");
-    UIViewController *vc = [[UIViewController alloc] init];
-    vc.view.backgroundColor = [UIColor redColor];
+    ZWJSubTagTableViewController *vc = [[ZWJSubTagTableViewController alloc] init];
+    
     [self.navigationController pushViewController:vc animated:YES];
     
     

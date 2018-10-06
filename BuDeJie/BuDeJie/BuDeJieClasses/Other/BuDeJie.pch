@@ -13,7 +13,9 @@
  */
 #import "UIBarButtonItem+Itme.h"
 #import "UIView+Frame.h"
+#import "AFHTTPSessionManager+Manager.h"
 
+#define ZWJBaseUrl @"http://mobads.baidu.com/cpro/ui/mads.php"
 
 //自定义log
 #ifdef DEBUG //调试

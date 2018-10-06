@@ -35,6 +35,10 @@
 		3420D9AA216855820031D400 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420D9A3216855820031D400 /* LaunchImage-700@2x.png */; };
 		3420D9AB216855820031D400 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420D9A4216855820031D400 /* LaunchImage-700-568h@2x.png */; };
 		3420D9AC216855820031D400 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420D9A5216855820031D400 /* LaunchImage.png */; };
+		3420D9AF2168A13B0031D400 /* AFHTTPSessionManager+Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420D9AE2168A13B0031D400 /* AFHTTPSessionManager+Manager.m */; };
+		3420D9B22168A4A40031D400 /* ZWJADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420D9B12168A4A40031D400 /* ZWJADItem.m */; };
+		3420DA6F2168CE090031D400 /* ZWJSubTagTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420DA6E2168CE090031D400 /* ZWJSubTagTableViewController.m */; };
+		3420DA722168D3070031D400 /* ZWJSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420DA712168D3070031D400 /* ZWJSubTagItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +88,14 @@
 		3420D9A3216855820031D400 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
 		3420D9A4216855820031D400 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
 		3420D9A5216855820031D400 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		3420D9AD2168A13B0031D400 /* AFHTTPSessionManager+Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Manager.h"; sourceTree = "<group>"; };
+		3420D9AE2168A13B0031D400 /* AFHTTPSessionManager+Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Manager.m"; sourceTree = "<group>"; };
+		3420D9B02168A4A40031D400 /* ZWJADItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJADItem.h; sourceTree = "<group>"; };
+		3420D9B12168A4A40031D400 /* ZWJADItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJADItem.m; sourceTree = "<group>"; };
+		3420DA6D2168CE090031D400 /* ZWJSubTagTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJSubTagTableViewController.h; sourceTree = "<group>"; };
+		3420DA6E2168CE090031D400 /* ZWJSubTagTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJSubTagTableViewController.m; sourceTree = "<group>"; };
+		3420DA702168D3070031D400 /* ZWJSubTagItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJSubTagItem.h; sourceTree = "<group>"; };
+		3420DA712168D3070031D400 /* ZWJSubTagItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJSubTagItem.m; sourceTree = "<group>"; };
 		3589AB4A57AD9CD2F94CB1E6 /* Pods-BuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
 		AE0FD88E6286397DA883A92C /* Pods-BuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.release.xcconfig"; sourceTree = "<group>"; };
 		DECA4F13BD8F6CE623DAFAD5 /* libPods-BuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,6 +251,8 @@
 			children = (
 				340331232165ADD30024FF7F /* ZWJNewViewController.h */,
 				340331242165ADD30024FF7F /* ZWJNewViewController.m */,
+				3420DA6D2168CE090031D400 /* ZWJSubTagTableViewController.h */,
+				3420DA6E2168CE090031D400 /* ZWJSubTagTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -246,6 +260,8 @@
 		340331072165A8E10024FF7F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3420DA702168D3070031D400 /* ZWJSubTagItem.h */,
+				3420DA712168D3070031D400 /* ZWJSubTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,6 +398,8 @@
 				3403313721660CDC0024FF7F /* UIBarButtonItem+Itme.m */,
 				340331452167625E0024FF7F /* UIView+Frame.h */,
 				340331462167625E0024FF7F /* UIView+Frame.m */,
+				3420D9AD2168A13B0031D400 /* AFHTTPSessionManager+Manager.h */,
+				3420D9AE2168A13B0031D400 /* AFHTTPSessionManager+Manager.m */,
 			);
 			path = "Category(类别)";
 			sourceTree = "<group>";
@@ -442,6 +460,8 @@
 		3420D997216849ED0031D400 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3420D9B02168A4A40031D400 /* ZWJADItem.h */,
+				3420D9B12168A4A40031D400 /* ZWJADItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -588,18 +608,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3403311C2165AD1D0024FF7F /* ZWJEssenceViewController.m in Sources */,
+				3420DA6F2168CE090031D400 /* ZWJSubTagTableViewController.m in Sources */,
 				3403311F2165AD710024FF7F /* ZWJFoollowViewController.m in Sources */,
 				3403313821660CDC0024FF7F /* UIBarButtonItem+Itme.m in Sources */,
 				340331192165A8E10024FF7F /* AppDelegate.m in Sources */,
 				340331442167586D0024FF7F /* ZWJStetupTableViewController.m in Sources */,
 				3403312B2165B0070024FF7F /* ZWJTabBarController.m in Sources */,
+				3420D9B22168A4A40031D400 /* ZWJADItem.m in Sources */,
 				3403313D216754250024FF7F /* ZWJINavigationController.m in Sources */,
 				3403312F2165E7510024FF7F /* UIImage+Rendering.m in Sources */,
 				3420D99C21684B5F0031D400 /* ZWJADViewController.m in Sources */,
+				3420D9AF2168A13B0031D400 /* AFHTTPSessionManager+Manager.m in Sources */,
 				340331282165AED00024FF7F /* ZWJReleasseViewController.m in Sources */,
 				340331252165ADD30024FF7F /* ZWJNewViewController.m in Sources */,
 				340331472167625E0024FF7F /* UIView+Frame.m in Sources */,
 				3420D99121676CAD0031D400 /* ZWJNavigationBar.m in Sources */,
+				3420DA722168D3070031D400 /* ZWJSubTagItem.m in Sources */,
 				340331222165ADA60024FF7F /* ZWJMeViewController.m in Sources */,
 				340331182165A8E10024FF7F /* main.m in Sources */,
 				340331322165F18C0024FF7F /* UITabBarItem+Font.m in Sources */,
