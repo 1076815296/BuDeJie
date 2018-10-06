@@ -200,6 +200,7 @@
     //精华
     ZWJEssenceViewController *vc = [[ZWJEssenceViewController alloc] init];
     //vc.view.backgroundColor = [UIColor redColor]; 不要在这边设置 不然每次颜色设置完控制器都会被加载z,在控制器中设置
+    //initWithRootViewController方法中会调用puhs方法
     ZWJINavigationController *nav = [[ZWJINavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
     
@@ -209,7 +210,7 @@
     [self addChildViewController:nav1];
     
     //发布
-    ZWJReleasseViewController *vc2 = [[UIViewController alloc] init];
+    ZWJReleasseViewController *vc2 = [[ZWJReleasseViewController alloc] init];
     [self addChildViewController:vc2];
     
     //关注

@@ -37,13 +37,13 @@
     
     //ZWJBackView *view = [[ZWJBackView alloc] initWithFrame:backButton.bounds];
     
-    ZWJBackView *view = [ZWJBackView viewButtonAddTarget:self action:@selector(back) title:@"返回" image:[UIImage imageNamed:@"navigationButtonReturn"] imageClick:[UIImage imageNamed:@"navigationButtonReturnClick"]];
+    /*ZWJBackView *view = [ZWJBackView viewButtonAddTarget:self action:@selector(back) title:@"返回" image:[UIImage imageNamed:@"navigationButtonReturn"] imageClick:[UIImage imageNamed:@"navigationButtonReturnClick"]];
     
     //[view addSubview:backButton];
     
     
     //为啥viewv不是self.navigationController.navigationBar的子控件
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:view];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:view];*/
     
     
     
@@ -68,25 +68,25 @@
 
 #pragma mark -----------------------
 #pragma mark 返回
-- (void)back {
+/*- (void)back {
     
     [self.navigationController popViewControllerAnimated:YES];
     
-}
+}*/
 
 
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//#warning Incomplete implementation, return the number of sections
+//    return 0;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//#warning Incomplete implementation, return the number of rows
+//    return 0;
+//}
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

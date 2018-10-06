@@ -9,6 +9,14 @@
 #import "AppDelegate.h"
 
 #import "ZWJTabBarController.h"
+#import "ZWJADViewController.h"
+/*
+ 广告界面,程序一启动就会进入广告界面
+ 
+ 1.搞一个view添加到窗口上,过段时间,在移除
+ 2.一开始设置窗口的根控制器为广告控制器
+ 
+ */
 
 @interface AppDelegate ()
 
@@ -16,15 +24,18 @@
 
 @implementation AppDelegate
 
-
+//程序启动完成的时候调用
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     //1.创建窗口
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     //2.创建窗口根控制器
-    ZWJTabBarController *tabBarVC = [[ZWJTabBarController alloc] init];
-    self.window.rootViewController = tabBarVC;
+    //  窗口在显示的时候,把窗口控制器的View添加窗口上
+    //ZWJTabBarController *tabBarVC = [[ZWJTabBarController alloc] init];
+    ZWJADViewController *adVC = [[ZWJADViewController alloc] init];
+    self.window.rootViewController = adVC;
+    
     
     
     //3.显示窗口

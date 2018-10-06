@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E19321644095FBFBAB6DFD2 /* libPods-BuDeJie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DECA4F13BD8F6CE623DAFAD5 /* libPods-BuDeJie.a */; };
 		340330EE2165A7CB0024FF7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340330ED2165A7CB0024FF7F /* Assets.xcassets */; };
 		340330F12165A7CB0024FF7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340330EF2165A7CB0024FF7F /* LaunchScreen.storyboard */; };
 		340331182165A8E10024FF7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 340331042165A8E10024FF7F /* main.m */; };
@@ -25,6 +26,15 @@
 		340331472167625E0024FF7F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 340331462167625E0024FF7F /* UIView+Frame.m */; };
 		3420D99121676CAD0031D400 /* ZWJNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420D99021676CAD0031D400 /* ZWJNavigationBar.m */; };
 		3420D99421676EAA0031D400 /* ZWJBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420D99321676EAA0031D400 /* ZWJBackView.m */; };
+		3420D99C21684B5F0031D400 /* ZWJADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420D99A21684B5F0031D400 /* ZWJADViewController.m */; };
+		3420D99D21684B5F0031D400 /* ZWJADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3420D99B21684B5F0031D400 /* ZWJADViewController.xib */; };
+		3420D9A6216855820031D400 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420D99F216855820031D400 /* LaunchImage@2x.png */; };
+		3420D9A7216855820031D400 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420D9A0216855820031D400 /* LaunchImage-568h@2x.png */; };
+		3420D9A8216855820031D400 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420D9A1216855820031D400 /* LaunchImage-800-667h@2x.png */; };
+		3420D9A9216855820031D400 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420D9A2216855820031D400 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		3420D9AA216855820031D400 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420D9A3216855820031D400 /* LaunchImage-700@2x.png */; };
+		3420D9AB216855820031D400 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420D9A4216855820031D400 /* LaunchImage-700-568h@2x.png */; };
+		3420D9AC216855820031D400 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3420D9A5216855820031D400 /* LaunchImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +74,19 @@
 		3420D99021676CAD0031D400 /* ZWJNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJNavigationBar.m; sourceTree = "<group>"; };
 		3420D99221676EAA0031D400 /* ZWJBackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJBackView.h; sourceTree = "<group>"; };
 		3420D99321676EAA0031D400 /* ZWJBackView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJBackView.m; sourceTree = "<group>"; };
+		3420D99921684B5F0031D400 /* ZWJADViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJADViewController.h; sourceTree = "<group>"; };
+		3420D99A21684B5F0031D400 /* ZWJADViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJADViewController.m; sourceTree = "<group>"; };
+		3420D99B21684B5F0031D400 /* ZWJADViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJADViewController.xib; sourceTree = "<group>"; };
+		3420D99F216855820031D400 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		3420D9A0216855820031D400 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		3420D9A1216855820031D400 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		3420D9A2216855820031D400 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		3420D9A3216855820031D400 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		3420D9A4216855820031D400 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		3420D9A5216855820031D400 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		3589AB4A57AD9CD2F94CB1E6 /* Pods-BuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0FD88E6286397DA883A92C /* Pods-BuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.release.xcconfig"; sourceTree = "<group>"; };
+		DECA4F13BD8F6CE623DAFAD5 /* libPods-BuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E19321644095FBFBAB6DFD2 /* libPods-BuDeJie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +106,8 @@
 			children = (
 				340330E32165A7C80024FF7F /* BuDeJie */,
 				340330E22165A7C80024FF7F /* Products */,
+				F33887AFC5FE18248F128867 /* Pods */,
+				D78EDD30FFA8903574AB1C89 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +126,7 @@
 				340330ED2165A7CB0024FF7F /* Assets.xcassets */,
 				340330EF2165A7CB0024FF7F /* LaunchScreen.storyboard */,
 				340330F22165A7CB0024FF7F /* Info.plist */,
+				3420D99E216855820031D400 /* 启动图片 */,
 			);
 			path = BuDeJie;
 			sourceTree = "<group>";
@@ -107,6 +134,7 @@
 		340330FA2165A8E10024FF7F /* BuDeJieClasses */ = {
 			isa = PBXGroup;
 			children = (
+				3420D995216849ED0031D400 /* AD(广告) */,
 				3403313E216758300024FF7F /* Setup(设置) */,
 				340330FB2165A8E10024FF7F /* follow(关注) */,
 				340330FF2165A8E10024FF7F /* Essence(精华) */,
@@ -391,6 +419,71 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3420D995216849ED0031D400 /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				3420D996216849ED0031D400 /* Controller */,
+				3420D997216849ED0031D400 /* Model */,
+				3420D998216849ED0031D400 /* View */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
+		3420D996216849ED0031D400 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3420D99921684B5F0031D400 /* ZWJADViewController.h */,
+				3420D99A21684B5F0031D400 /* ZWJADViewController.m */,
+				3420D99B21684B5F0031D400 /* ZWJADViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3420D997216849ED0031D400 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3420D998216849ED0031D400 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3420D99E216855820031D400 /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				3420D99F216855820031D400 /* LaunchImage@2x.png */,
+				3420D9A0216855820031D400 /* LaunchImage-568h@2x.png */,
+				3420D9A1216855820031D400 /* LaunchImage-800-667h@2x.png */,
+				3420D9A2216855820031D400 /* LaunchImage-800-Portrait-736h@3x.png */,
+				3420D9A3216855820031D400 /* LaunchImage-700@2x.png */,
+				3420D9A4216855820031D400 /* LaunchImage-700-568h@2x.png */,
+				3420D9A5216855820031D400 /* LaunchImage.png */,
+			);
+			path = "启动图片";
+			sourceTree = "<group>";
+		};
+		D78EDD30FFA8903574AB1C89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DECA4F13BD8F6CE623DAFAD5 /* libPods-BuDeJie.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F33887AFC5FE18248F128867 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3589AB4A57AD9CD2F94CB1E6 /* Pods-BuDeJie.debug.xcconfig */,
+				AE0FD88E6286397DA883A92C /* Pods-BuDeJie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,6 +491,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 340330F72165A7CB0024FF7F /* Build configuration list for PBXNativeTarget "BuDeJie" */;
 			buildPhases = (
+				F8E32C08085D45DB59AFF37F /* [CP] Check Pods Manifest.lock */,
 				340330DD2165A7C80024FF7F /* Sources */,
 				340330DE2165A7C80024FF7F /* Frameworks */,
 				340330DF2165A7C80024FF7F /* Resources */,
@@ -449,11 +543,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				340330F12165A7CB0024FF7F /* LaunchScreen.storyboard in Resources */,
+				3420D9A8216855820031D400 /* LaunchImage-800-667h@2x.png in Resources */,
+				3420D9A6216855820031D400 /* LaunchImage@2x.png in Resources */,
+				3420D9A7216855820031D400 /* LaunchImage-568h@2x.png in Resources */,
 				340330EE2165A7CB0024FF7F /* Assets.xcassets in Resources */,
+				3420D9AA216855820031D400 /* LaunchImage-700@2x.png in Resources */,
+				3420D9AC216855820031D400 /* LaunchImage.png in Resources */,
+				3420D99D21684B5F0031D400 /* ZWJADViewController.xib in Resources */,
+				3420D9A9216855820031D400 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				3420D9AB216855820031D400 /* LaunchImage-700-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F8E32C08085D45DB59AFF37F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BuDeJie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		340330DD2165A7C80024FF7F /* Sources */ = {
@@ -468,6 +595,7 @@
 				3403312B2165B0070024FF7F /* ZWJTabBarController.m in Sources */,
 				3403313D216754250024FF7F /* ZWJINavigationController.m in Sources */,
 				3403312F2165E7510024FF7F /* UIImage+Rendering.m in Sources */,
+				3420D99C21684B5F0031D400 /* ZWJADViewController.m in Sources */,
 				340331282165AED00024FF7F /* ZWJReleasseViewController.m in Sources */,
 				340331252165ADD30024FF7F /* ZWJNewViewController.m in Sources */,
 				340331472167625E0024FF7F /* UIView+Frame.m in Sources */,
@@ -607,6 +735,7 @@
 		};
 		340330F82165A7CB0024FF7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3589AB4A57AD9CD2F94CB1E6 /* Pods-BuDeJie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -625,6 +754,7 @@
 		};
 		340330F92165A7CB0024FF7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0FD88E6286397DA883A92C /* Pods-BuDeJie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

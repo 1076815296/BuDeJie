@@ -28,15 +28,19 @@
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
     //左边
-    UIBarButtonItem *leftiem = [UIBarButtonItem itmeWithImageName:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] Target:self action:@selector(gameClick)];
+    UIBarButtonItem *leftiem = [UIBarButtonItem itmeWithImageName:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] Target:self action:@selector(subClick)];
     self.navigationItem.leftBarButtonItem = leftiem;
     
 
 }
 
-- (void)gameClick {
+- (void)subClick {
     
     NSLog(@"订阅标签");
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor redColor];
+    [self.navigationController pushViewController:vc animated:YES];
+    
     
 }
 
