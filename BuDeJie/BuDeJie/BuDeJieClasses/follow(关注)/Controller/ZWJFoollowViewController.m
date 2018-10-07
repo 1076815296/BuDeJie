@@ -2,12 +2,12 @@
 //  ZWJFoollowViewController.m
 //  BuDeJie
 //
-//  Created by 林泉 on 2018/10/4.
+//  Created by 林泉 on 2018/10/7.
 //  Copyright © 2018年 ZWJ. All rights reserved.
 //
 
 #import "ZWJFoollowViewController.h"
-
+#import "ZWJLoginViewController.h"
 
 @interface ZWJFoollowViewController ()
 
@@ -15,9 +15,21 @@
 
 @implementation ZWJFoollowViewController
 
+//点击了登录按钮
+- (IBAction)clickLogin:(id)sender {
+    
+    //加载storyboard
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ZWJLoginViewController" bundle:nil];
+    
+    //加载箭头指向的控制器
+    ZWJLoginViewController *loginVC = [storyboard instantiateInitialViewController];
+    
+    [self presentViewController:loginVC animated:YES completion:nil];
+    
+}
+
+
 //设置导航条标题字体
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,5 +56,6 @@
     
     ZWJLog(@"我的关注");
 }
+
 
 @end

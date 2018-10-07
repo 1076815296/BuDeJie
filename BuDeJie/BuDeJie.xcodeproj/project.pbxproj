@@ -13,7 +13,6 @@
 		340331182165A8E10024FF7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 340331042165A8E10024FF7F /* main.m */; };
 		340331192165A8E10024FF7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403310F2165A8E10024FF7F /* AppDelegate.m */; };
 		3403311C2165AD1D0024FF7F /* ZWJEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403311B2165AD1D0024FF7F /* ZWJEssenceViewController.m */; };
-		3403311F2165AD710024FF7F /* ZWJFoollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403311E2165AD710024FF7F /* ZWJFoollowViewController.m */; };
 		340331222165ADA60024FF7F /* ZWJMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340331212165ADA60024FF7F /* ZWJMeViewController.m */; };
 		340331252165ADD30024FF7F /* ZWJNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340331242165ADD30024FF7F /* ZWJNewViewController.m */; };
 		340331282165AED00024FF7F /* ZWJReleasseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 340331272165AED00024FF7F /* ZWJReleasseViewController.m */; };
@@ -41,6 +40,13 @@
 		3420DA722168D3070031D400 /* ZWJSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420DA712168D3070031D400 /* ZWJSubTagItem.m */; };
 		3420DA76216993030031D400 /* ZWJTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420DA74216993030031D400 /* ZWJTagCell.m */; };
 		3420DA77216993030031D400 /* ZWJTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3420DA75216993030031D400 /* ZWJTagCell.xib */; };
+		3447C7D72169F8C40027F522 /* ZWJFoollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3447C7D52169F8C40027F522 /* ZWJFoollowViewController.m */; };
+		3447C7DA2169F8F40027F522 /* ZWJFoollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3447C7D92169F8F40027F522 /* ZWJFoollowViewController.xib */; };
+		3447C7DD2169FDCE0027F522 /* ZWJLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3447C7DC2169FDCE0027F522 /* ZWJLoginViewController.m */; };
+		3447C7DF2169FE040027F522 /* ZWJLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3447C7DE2169FE040027F522 /* ZWJLoginViewController.storyboard */; };
+		3447C7E2216A29E40027F522 /* ZWJLogInRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3447C7E1216A29E40027F522 /* ZWJLogInRegisterView.m */; };
+		3447C7E4216A29F60027F522 /* ZWJLogInRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3447C7E3216A29F60027F522 /* ZWJLogInRegisterView.xib */; };
+		3447C7EA216A3D680027F522 /* ZWJFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3447C7E9216A3D680027F522 /* ZWJFastLoginButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +59,6 @@
 		3403310F2165A8E10024FF7F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3403311A2165AD1D0024FF7F /* ZWJEssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJEssenceViewController.h; sourceTree = "<group>"; };
 		3403311B2165AD1D0024FF7F /* ZWJEssenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJEssenceViewController.m; sourceTree = "<group>"; };
-		3403311D2165AD710024FF7F /* ZWJFoollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJFoollowViewController.h; sourceTree = "<group>"; };
-		3403311E2165AD710024FF7F /* ZWJFoollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJFoollowViewController.m; sourceTree = "<group>"; };
 		340331202165ADA60024FF7F /* ZWJMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJMeViewController.h; sourceTree = "<group>"; };
 		340331212165ADA60024FF7F /* ZWJMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJMeViewController.m; sourceTree = "<group>"; };
 		340331232165ADD30024FF7F /* ZWJNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJNewViewController.h; sourceTree = "<group>"; };
@@ -101,6 +105,17 @@
 		3420DA73216993030031D400 /* ZWJTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJTagCell.h; sourceTree = "<group>"; };
 		3420DA74216993030031D400 /* ZWJTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJTagCell.m; sourceTree = "<group>"; };
 		3420DA75216993030031D400 /* ZWJTagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJTagCell.xib; sourceTree = "<group>"; };
+		3447C7D42169F8C40027F522 /* ZWJFoollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJFoollowViewController.h; sourceTree = "<group>"; };
+		3447C7D52169F8C40027F522 /* ZWJFoollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJFoollowViewController.m; sourceTree = "<group>"; };
+		3447C7D92169F8F40027F522 /* ZWJFoollowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJFoollowViewController.xib; sourceTree = "<group>"; };
+		3447C7DB2169FDCE0027F522 /* ZWJLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJLoginViewController.h; sourceTree = "<group>"; };
+		3447C7DC2169FDCE0027F522 /* ZWJLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJLoginViewController.m; sourceTree = "<group>"; };
+		3447C7DE2169FE040027F522 /* ZWJLoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ZWJLoginViewController.storyboard; sourceTree = "<group>"; };
+		3447C7E0216A29E40027F522 /* ZWJLogInRegisterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJLogInRegisterView.h; sourceTree = "<group>"; };
+		3447C7E1216A29E40027F522 /* ZWJLogInRegisterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJLogInRegisterView.m; sourceTree = "<group>"; };
+		3447C7E3216A29F60027F522 /* ZWJLogInRegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJLogInRegisterView.xib; sourceTree = "<group>"; };
+		3447C7E8216A3D680027F522 /* ZWJFastLoginButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJFastLoginButton.h; sourceTree = "<group>"; };
+		3447C7E9216A3D680027F522 /* ZWJFastLoginButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJFastLoginButton.m; sourceTree = "<group>"; };
 		3589AB4A57AD9CD2F94CB1E6 /* Pods-BuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
 		AE0FD88E6286397DA883A92C /* Pods-BuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.release.xcconfig"; sourceTree = "<group>"; };
 		DECA4F13BD8F6CE623DAFAD5 /* libPods-BuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,8 +193,12 @@
 		340330FC2165A8E10024FF7F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3403311D2165AD710024FF7F /* ZWJFoollowViewController.h */,
-				3403311E2165AD710024FF7F /* ZWJFoollowViewController.m */,
+				3447C7D42169F8C40027F522 /* ZWJFoollowViewController.h */,
+				3447C7D52169F8C40027F522 /* ZWJFoollowViewController.m */,
+				3447C7D92169F8F40027F522 /* ZWJFoollowViewController.xib */,
+				3447C7DB2169FDCE0027F522 /* ZWJLoginViewController.h */,
+				3447C7DC2169FDCE0027F522 /* ZWJLoginViewController.m */,
+				3447C7DE2169FE040027F522 /* ZWJLoginViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,6 +213,11 @@
 		340330FE2165A8E10024FF7F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3447C7E0216A29E40027F522 /* ZWJLogInRegisterView.h */,
+				3447C7E1216A29E40027F522 /* ZWJLogInRegisterView.m */,
+				3447C7E3216A29F60027F522 /* ZWJLogInRegisterView.xib */,
+				3447C7E8216A3D680027F522 /* ZWJFastLoginButton.h */,
+				3447C7E9216A3D680027F522 /* ZWJFastLoginButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -572,10 +596,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				340330F12165A7CB0024FF7F /* LaunchScreen.storyboard in Resources */,
+				3447C7DA2169F8F40027F522 /* ZWJFoollowViewController.xib in Resources */,
 				3420D9A8216855820031D400 /* LaunchImage-800-667h@2x.png in Resources */,
 				3420D9A6216855820031D400 /* LaunchImage@2x.png in Resources */,
 				3420D9A7216855820031D400 /* LaunchImage-568h@2x.png in Resources */,
 				3420DA77216993030031D400 /* ZWJTagCell.xib in Resources */,
+				3447C7DF2169FE040027F522 /* ZWJLoginViewController.storyboard in Resources */,
+				3447C7E4216A29F60027F522 /* ZWJLogInRegisterView.xib in Resources */,
 				340330EE2165A7CB0024FF7F /* Assets.xcassets in Resources */,
 				3420D9AA216855820031D400 /* LaunchImage-700@2x.png in Resources */,
 				3420D9AC216855820031D400 /* LaunchImage.png in Resources */,
@@ -641,10 +668,10 @@
 			files = (
 				3403311C2165AD1D0024FF7F /* ZWJEssenceViewController.m in Sources */,
 				3420DA6F2168CE090031D400 /* ZWJSubTagTableViewController.m in Sources */,
-				3403311F2165AD710024FF7F /* ZWJFoollowViewController.m in Sources */,
 				3403313821660CDC0024FF7F /* UIBarButtonItem+Itme.m in Sources */,
 				340331192165A8E10024FF7F /* AppDelegate.m in Sources */,
 				340331442167586D0024FF7F /* ZWJStetupTableViewController.m in Sources */,
+				3447C7D72169F8C40027F522 /* ZWJFoollowViewController.m in Sources */,
 				3403312B2165B0070024FF7F /* ZWJTabBarController.m in Sources */,
 				3420D9B22168A4A40031D400 /* ZWJADItem.m in Sources */,
 				3403313D216754250024FF7F /* ZWJINavigationController.m in Sources */,
@@ -652,6 +679,7 @@
 				3420D99C21684B5F0031D400 /* ZWJADViewController.m in Sources */,
 				3420D9AF2168A13B0031D400 /* AFHTTPSessionManager+Manager.m in Sources */,
 				3420DA76216993030031D400 /* ZWJTagCell.m in Sources */,
+				3447C7E2216A29E40027F522 /* ZWJLogInRegisterView.m in Sources */,
 				340331282165AED00024FF7F /* ZWJReleasseViewController.m in Sources */,
 				340331252165ADD30024FF7F /* ZWJNewViewController.m in Sources */,
 				340331472167625E0024FF7F /* UIView+Frame.m in Sources */,
@@ -659,6 +687,8 @@
 				3420DA722168D3070031D400 /* ZWJSubTagItem.m in Sources */,
 				340331222165ADA60024FF7F /* ZWJMeViewController.m in Sources */,
 				340331182165A8E10024FF7F /* main.m in Sources */,
+				3447C7EA216A3D680027F522 /* ZWJFastLoginButton.m in Sources */,
+				3447C7DD2169FDCE0027F522 /* ZWJLoginViewController.m in Sources */,
 				340331322165F18C0024FF7F /* UITabBarItem+Font.m in Sources */,
 				3420D99421676EAA0031D400 /* ZWJBackView.m in Sources */,
 			);

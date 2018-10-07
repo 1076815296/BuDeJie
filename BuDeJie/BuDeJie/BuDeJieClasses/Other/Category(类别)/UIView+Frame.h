@@ -12,9 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (Frame)
 
-
+@property  CGFloat zwj_centerX;
+@property  CGFloat zwj_centerY;
 @property  CGFloat zwj_x;
-@property  CGFloat zwj_y;
+@property  CGFloat zwj_y; 
 @property  CGFloat zwj_width;
 @property  CGFloat zwj_height;
 

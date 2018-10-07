@@ -1,5 +1,5 @@
 //
-//  ZWJFoollowViewController.h
+//  ZWJLogInRegisterView.h
 //  BuDeJie
 //
 //  Created by 林泉 on 2018/10/7.
@@ -10,7 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZWJFoollowViewController : UIViewController
+@interface ZWJLogInRegisterView : UIView
+
++ (instancetype)RegisterView;
+
++ (instancetype)LogInView;
+
 
 @end
 

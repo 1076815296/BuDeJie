@@ -10,6 +10,36 @@
 
 @implementation UIView (Frame)
 
+- (CGFloat)zwj_centerX{
+    
+    return self.center.x;
+    
+}
+
+- (CGFloat)zwj_centerY{
+    
+    return self.center.y;
+    
+}
+
+- (void)setZwj_centerX:(CGFloat)zwj_centerX{
+    
+    CGPoint center = self.center;
+    center.x = zwj_centerX;
+    self.center = center;
+    
+}
+
+- (void)setZwj_centerY:(CGFloat)zwj_centerY{
+    
+    CGPoint center = self.center;
+    center.y = zwj_centerY;
+    self.center = center;
+    
+}
+
+
+
 - (CGFloat)zwj_x{
     
     return self.frame.origin.x;

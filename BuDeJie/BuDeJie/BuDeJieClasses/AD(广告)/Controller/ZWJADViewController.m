@@ -38,13 +38,7 @@
 #import <UIImageView+WebCache.h>
 #import "ZWJTabBarController.h"
 
-#define ZWJScreenH [UIScreen mainScreen].bounds.size.height
-#define ZWJScreenW [UIScreen mainScreen].bounds.size.width
 
-#define iPhone6P (ZWJScreenH == 736)
-#define iPhone6 (ZWJScreenH == 667)
-#define iPhone5P (ZWJScreenH == 568)
-#define iPhone4 (ZWJScreenH == 480)
 
 
 /*
