@@ -39,6 +39,8 @@
 		3420D9B22168A4A40031D400 /* ZWJADItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420D9B12168A4A40031D400 /* ZWJADItem.m */; };
 		3420DA6F2168CE090031D400 /* ZWJSubTagTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420DA6E2168CE090031D400 /* ZWJSubTagTableViewController.m */; };
 		3420DA722168D3070031D400 /* ZWJSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420DA712168D3070031D400 /* ZWJSubTagItem.m */; };
+		3420DA76216993030031D400 /* ZWJTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3420DA74216993030031D400 /* ZWJTagCell.m */; };
+		3420DA77216993030031D400 /* ZWJTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3420DA75216993030031D400 /* ZWJTagCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +98,9 @@
 		3420DA6E2168CE090031D400 /* ZWJSubTagTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJSubTagTableViewController.m; sourceTree = "<group>"; };
 		3420DA702168D3070031D400 /* ZWJSubTagItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJSubTagItem.h; sourceTree = "<group>"; };
 		3420DA712168D3070031D400 /* ZWJSubTagItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJSubTagItem.m; sourceTree = "<group>"; };
+		3420DA73216993030031D400 /* ZWJTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJTagCell.h; sourceTree = "<group>"; };
+		3420DA74216993030031D400 /* ZWJTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJTagCell.m; sourceTree = "<group>"; };
+		3420DA75216993030031D400 /* ZWJTagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJTagCell.xib; sourceTree = "<group>"; };
 		3589AB4A57AD9CD2F94CB1E6 /* Pods-BuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
 		AE0FD88E6286397DA883A92C /* Pods-BuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.release.xcconfig"; sourceTree = "<group>"; };
 		DECA4F13BD8F6CE623DAFAD5 /* libPods-BuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +274,9 @@
 		340331082165A8E10024FF7F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3420DA73216993030031D400 /* ZWJTagCell.h */,
+				3420DA74216993030031D400 /* ZWJTagCell.m */,
+				3420DA75216993030031D400 /* ZWJTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -566,6 +574,7 @@
 				3420D9A8216855820031D400 /* LaunchImage-800-667h@2x.png in Resources */,
 				3420D9A6216855820031D400 /* LaunchImage@2x.png in Resources */,
 				3420D9A7216855820031D400 /* LaunchImage-568h@2x.png in Resources */,
+				3420DA77216993030031D400 /* ZWJTagCell.xib in Resources */,
 				340330EE2165A7CB0024FF7F /* Assets.xcassets in Resources */,
 				3420D9AA216855820031D400 /* LaunchImage-700@2x.png in Resources */,
 				3420D9AC216855820031D400 /* LaunchImage.png in Resources */,
@@ -619,6 +628,7 @@
 				3403312F2165E7510024FF7F /* UIImage+Rendering.m in Sources */,
 				3420D99C21684B5F0031D400 /* ZWJADViewController.m in Sources */,
 				3420D9AF2168A13B0031D400 /* AFHTTPSessionManager+Manager.m in Sources */,
+				3420DA76216993030031D400 /* ZWJTagCell.m in Sources */,
 				340331282165AED00024FF7F /* ZWJReleasseViewController.m in Sources */,
 				340331252165ADD30024FF7F /* ZWJNewViewController.m in Sources */,
 				340331472167625E0024FF7F /* UIView+Frame.m in Sources */,

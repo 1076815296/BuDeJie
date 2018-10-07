@@ -173,17 +173,18 @@
     
     //进入广告界面
     //safari
-    NSURL *url = [NSURL URLWithString:@"www.baidu.com"];
-    if ([[UIApplication sharedApplication] canOpenURL:url]) {
-        [[UIApplication sharedApplication] openURL:url];
-        
-    };
+//    NSURL *url = [NSURL URLWithString:@"www.baidu.com"];
+//    if ([[UIApplication sharedApplication] canOpenURL:url]) {
+//        [[UIApplication sharedApplication] openURL:url];
+//    };
+    
+    
   
     NSLog(@"嗨");
     
 }
 
-
+//根据屏幕去加载不同的图片
 - (void)setupLaunchImageView{
     
     //根据屏幕去加载不同的图片

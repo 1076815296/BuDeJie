@@ -9,7 +9,13 @@
 #import "ZWJSubTagTableViewController.h"
 #import "ZWJSubTagItem.h"
 #import <MJExtension/MJExtension.h>
+#import "ZWJTagCell.h"
 
+/*
+ 加载Xib Cell
+ 1.NSBundle
+ 2.注册
+ */
 
 @interface ZWJSubTagTableViewController ()
 
@@ -22,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //请求数据 =>查看接口(1.基本的URL 2.请求方式 3.请求参数) =>AFN
+    //请求数据 =>查看接口(1.基本的URL 2.请求方式 3.请求参数) =>AFN => 写成plist =>设计模型 =>z 字典转模型
     [self loadData];
     
 }
@@ -59,12 +65,9 @@
 
 #pragma mark - Table view data source
 
-
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    
-    //return self.tags.count;
+        //return self.tags.count;
     return 2;
 }
 
@@ -72,17 +75,17 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *ID = @"cell";
+    static NSString *ID = @"cell1";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID ];
+    ZWJTagCell *cell = [tableView dequeueReusableCellWithIdentifier:ID ];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
+        cell = [ZWJTagCell cell];
     }
     
     //cell.textLabel.text = [_tags[indexPath.row] theme_name];
     
-    cell.textLabel.text = @"预设";
+    //cell.textLabel.text = @"预设";
     
     
     return cell;
