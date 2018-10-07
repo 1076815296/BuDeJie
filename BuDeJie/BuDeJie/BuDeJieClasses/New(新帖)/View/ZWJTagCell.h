@@ -10,7 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class ZWJSubTagItem;
 @interface ZWJTagCell : UITableViewCell
+
+@property (nonatomic, strong) ZWJSubTagItem *item;
 
 + (instancetype)cell;
 

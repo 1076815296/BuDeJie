@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" rowHeight="64" id="KGk-i7-Jjw" customClass="ZWJTagCell">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="ZWJTagCell">
             <rect key="frame" x="0.0" y="0.0" width="330" height="64"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -24,6 +24,12 @@
                             <constraint firstAttribute="width" constant="40" id="23e-dq-mEt"/>
                             <constraint firstAttribute="height" constant="40" id="6Up-vb-EhK"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4N-gQ-Yqi">
                         <rect key="frame" x="68" y="12" width="42" height="21"/>
@@ -64,6 +70,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="iconView" destination="f59-Dv-U6H" id="9sO-8A-KhG"/>
+                <outlet property="nameView" destination="X4N-gQ-Yqi" id="kYO-fG-3Yj"/>
+                <outlet property="numView" destination="0fA-FT-yhA" id="Web-d6-HPU"/>
+            </connections>
             <point key="canvasLocation" x="145.59999999999999" y="133.13343328335833"/>
         </tableViewCell>
     </objects>
