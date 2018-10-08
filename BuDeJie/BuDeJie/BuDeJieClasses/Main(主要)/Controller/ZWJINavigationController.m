@@ -113,7 +113,7 @@
     //self.interactivePopGestureRecognizer.delegate = nil;
     
     
-    NSLog(@"%@",self.interactivePopGestureRecognizer);
+    //NSLog(@"%@",self.interactivePopGestureRecognizer);
     
     //换成自己的导航条
     ZWJNavigationBar *bar = [[ZWJNavigationBar alloc] initWithFrame:self.navigationBar.frame];

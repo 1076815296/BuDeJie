@@ -21,7 +21,7 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_rgister_textfield_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ewI-2X-o3f">
                             <rect key="frame" x="0.0" y="0.0" width="266" height="92"/>
                         </imageView>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6l1-uY-efp">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6l1-uY-efp" customClass="ZWJLoginField">
                             <rect key="frame" x="2" y="0.0" width="264" height="46"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="46" id="jzv-a9-bev"/>
@@ -30,7 +30,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DyM-z5-HTX">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DyM-z5-HTX" customClass="ZWJLoginField">
                             <rect key="frame" x="2" y="46" width="264" height="46"/>
                             <nil key="textColor"/>
                             <textInputTraits key="textInputTraits"/>
@@ -91,7 +91,7 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_rgister_textfield_bg" translatesAutoresizingMaskIntoConstraints="NO" id="ZcK-wj-ojE">
                             <rect key="frame" x="0.0" y="0.0" width="266" height="92"/>
                         </imageView>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CuT-4V-Dga">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CuT-4V-Dga" customClass="ZWJLoginField">
                             <rect key="frame" x="2" y="0.0" width="264" height="46"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="46" id="hAi-bF-UyE"/>
@@ -100,7 +100,7 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="设置密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MXN-bE-fHq">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="设置密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MXN-bE-fHq" customClass="ZWJLoginField">
                             <rect key="frame" x="2" y="46" width="264" height="46"/>
                             <nil key="textColor"/>
                             <textInputTraits key="textInputTraits"/>

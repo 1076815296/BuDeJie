@@ -139,7 +139,7 @@
         
         //ZWJLog(@"%@",responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        ZWJLog(@"%@",error);
+        //ZWJLog(@"%@",error);
     }];
     
     
@@ -158,7 +158,7 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
     [imageView addGestureRecognizer:tap];
     
-    NSLog(@"%@",imageView);
+   
     
 }
 #pragma mark -----------------------
@@ -174,7 +174,7 @@
     
     
   
-    NSLog(@"嗨");
+    
     
 }
 

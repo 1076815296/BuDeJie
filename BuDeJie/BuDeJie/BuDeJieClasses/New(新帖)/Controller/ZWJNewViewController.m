@@ -37,7 +37,7 @@
 
 - (void)subClick {
     
-    NSLog(@"订阅标签");
+   
     ZWJSubTagTableViewController *vc = [[ZWJSubTagTableViewController alloc] init];
     
     [self.navigationController pushViewController:vc animated:YES];

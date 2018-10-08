@@ -219,7 +219,9 @@
     [self addChildViewController:nav3];
     
     //我
-    ZWJMeViewController *vc4 = [[ZWJMeViewController alloc] init];
+    //ZWJMeViewController *vc4 = [[ZWJMeViewController alloc] init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ZWJMeViewController" bundle:nil];
+    ZWJMeViewController *vc4 = [storyboard instantiateInitialViewController];
     ZWJINavigationController *nav4 = [[ZWJINavigationController alloc] initWithRootViewController:vc4];
     [self addChildViewController:nav4];
     

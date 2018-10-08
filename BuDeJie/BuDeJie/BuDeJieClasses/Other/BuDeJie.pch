@@ -14,6 +14,9 @@
 #import "UIBarButtonItem+Itme.h"
 #import "UIView+Frame.h"
 #import "AFHTTPSessionManager+Manager.h"
+#import "UITextField+Placeholder.h"
+
+#define SystemVersion [[UIDevice currentDevice].systemVersion floatValue]
 
 #define ZWJBaseUrl @"http://mobads.baidu.com/cpro/ui/mads.php"
 
