@@ -59,6 +59,7 @@
 		34680AE7216C968D001460F6 /* ZWJVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34680AE6216C968D001460F6 /* ZWJVoiceViewController.m */; };
 		34680AEA216C96AE001460F6 /* ZWJPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34680AE9216C96AE001460F6 /* ZWJPictureViewController.m */; };
 		34680AED216C96C9001460F6 /* ZWJTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34680AEC216C96C9001460F6 /* ZWJTextViewController.m */; };
+		34EF65F1216CD927009A0A4B /* ZWJBaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF65F0216CD927009A0A4B /* ZWJBaseTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,8 @@
 		34680AE9216C96AE001460F6 /* ZWJPictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJPictureViewController.m; sourceTree = "<group>"; };
 		34680AEB216C96C9001460F6 /* ZWJTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJTextViewController.h; sourceTree = "<group>"; };
 		34680AEC216C96C9001460F6 /* ZWJTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJTextViewController.m; sourceTree = "<group>"; };
+		34EF65EF216CD927009A0A4B /* ZWJBaseTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJBaseTabViewController.h; sourceTree = "<group>"; };
+		34EF65F0216CD927009A0A4B /* ZWJBaseTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJBaseTabViewController.m; sourceTree = "<group>"; };
 		3589AB4A57AD9CD2F94CB1E6 /* Pods-BuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
 		AE0FD88E6286397DA883A92C /* Pods-BuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.release.xcconfig"; sourceTree = "<group>"; };
 		DECA4F13BD8F6CE623DAFAD5 /* libPods-BuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +203,7 @@
 		340330FA2165A8E10024FF7F /* BuDeJieClasses */ = {
 			isa = PBXGroup;
 			children = (
+				34EF65EE216CD8AF009A0A4B /* Base(基类) */,
 				34680A6D216C2D73001460F6 /* Utils(工具类) */,
 				3420D995216849ED0031D400 /* AD(广告) */,
 				3403313E216758300024FF7F /* Setup(设置) */,
@@ -599,6 +603,15 @@
 			path = ChildViewController;
 			sourceTree = "<group>";
 		};
+		34EF65EE216CD8AF009A0A4B /* Base(基类) */ = {
+			isa = PBXGroup;
+			children = (
+				34EF65EF216CD927009A0A4B /* ZWJBaseTabViewController.h */,
+				34EF65F0216CD927009A0A4B /* ZWJBaseTabViewController.m */,
+			);
+			path = "Base(基类)";
+			sourceTree = "<group>";
+		};
 		D78EDD30FFA8903574AB1C89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,6 +770,7 @@
 				3447C7D72169F8C40027F522 /* ZWJFoollowViewController.m in Sources */,
 				34680A66216B3AA2001460F6 /* ZWJSquareItem.m in Sources */,
 				3403312B2165B0070024FF7F /* ZWJTabBarController.m in Sources */,
+				34EF65F1216CD927009A0A4B /* ZWJBaseTabViewController.m in Sources */,
 				3420D9B22168A4A40031D400 /* ZWJADItem.m in Sources */,
 				34680AE1216C960D001460F6 /* ZWJAllTableViewController.m in Sources */,
 				34680A71216C2DAE001460F6 /* ZWJFileManagr.m in Sources */,

@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ZWJBaseTabViewController.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ZWJNewViewController : UIViewController
+@interface ZWJNewViewController : ZWJBaseTabViewController
 
 @end
 
