@@ -18,6 +18,8 @@
 
 #define SystemVersion [[UIDevice currentDevice].systemVersion floatValue]
 
+#define ZWJColor(r,g,b) [UIColor colorWithRed:(r)/ 250.0 green:(g)/ 250.0 blue:(b)/ 250.0 alpha:1]
+
 #define ZWJBaseUrl @"http://mobads.baidu.com/cpro/ui/mads.php"
 
 #define ZWJScreenH [UIScreen mainScreen].bounds.size.height

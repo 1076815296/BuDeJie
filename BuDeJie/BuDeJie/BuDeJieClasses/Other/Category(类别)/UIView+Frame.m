@@ -75,7 +75,7 @@
 - (void)setZwj_y:(CGFloat)zwj_y{
     
     CGRect frame = self.frame;
-    frame.origin.x = zwj_y;
+    frame.origin.y = zwj_y;
     self.frame = frame;
     
 }
