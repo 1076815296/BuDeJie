@@ -6,5 +6,6 @@ pod 'AFNetworking', '~> 3.2.1'
 pod 'MJExtension', '~> 3.0.15.1'
 pod 'SDWebImage', '~> 4.0.0-beta2'
 pod 'SVProgressHUD', '~> 2.2.5'
+pod 'DACircularProgress', '~> 2.3.1'
 
 end

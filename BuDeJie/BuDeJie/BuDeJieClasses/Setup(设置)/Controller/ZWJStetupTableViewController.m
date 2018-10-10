@@ -89,6 +89,7 @@ static NSString * const ID = @"cell";
     //清除缓存
     [ZWJFileManagr removeDirectoryPath:CachePath];
    
+    self.str = @"清除缓存";
     
     //刷新表格
     [self.tableView reloadData];

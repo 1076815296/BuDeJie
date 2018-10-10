@@ -60,6 +60,18 @@
 		34680AEA216C96AE001460F6 /* ZWJPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34680AE9216C96AE001460F6 /* ZWJPictureViewController.m */; };
 		34680AED216C96C9001460F6 /* ZWJTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34680AEC216C96C9001460F6 /* ZWJTextViewController.m */; };
 		34EF65F1216CD927009A0A4B /* ZWJBaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF65F0216CD927009A0A4B /* ZWJBaseTabViewController.m */; };
+		34EF6622216DB230009A0A4B /* ZWJTopTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF661D216DB230009A0A4B /* ZWJTopTopicView.m */; };
+		34EF6624216DB230009A0A4B /* ZWJTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF6620216DB230009A0A4B /* ZWJTopicCell.m */; };
+		34EF6627216DB238009A0A4B /* ZWJTopicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF6626216DB238009A0A4B /* ZWJTopicItem.m */; };
+		34EF662B216DE5DA009A0A4B /* ZWJTopicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF662A216DE5DA009A0A4B /* ZWJTopicViewModel.m */; };
+		34EF6631216DF87B009A0A4B /* ZWJPictureTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF6630216DF87B009A0A4B /* ZWJPictureTopicView.m */; };
+		34EF6633216DF896009A0A4B /* ZWJTopTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EF6632216DF896009A0A4B /* ZWJTopTopicView.xib */; };
+		34EF6635216DFA90009A0A4B /* ZWJPictureTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EF6634216DFA90009A0A4B /* ZWJPictureTopicView.xib */; };
+		34EF663B216DFE4E009A0A4B /* ZWJBaseTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF663A216DFE4E009A0A4B /* ZWJBaseTopicView.m */; };
+		34EF663E216E2252009A0A4B /* ZWJVideoTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF663D216E2252009A0A4B /* ZWJVideoTopicView.m */; };
+		34EF6641216E2279009A0A4B /* ZWJVoiceTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF6640216E2279009A0A4B /* ZWJVoiceTopicView.m */; };
+		34EF6643216E2293009A0A4B /* ZWJVideoTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EF6642216E2293009A0A4B /* ZWJVideoTopicView.xib */; };
+		34EF6645216E229C009A0A4B /* ZWJVoiceTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EF6644216E229C009A0A4B /* ZWJVoiceTopicView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +165,26 @@
 		34680AEC216C96C9001460F6 /* ZWJTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJTextViewController.m; sourceTree = "<group>"; };
 		34EF65EF216CD927009A0A4B /* ZWJBaseTabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJBaseTabViewController.h; sourceTree = "<group>"; };
 		34EF65F0216CD927009A0A4B /* ZWJBaseTabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJBaseTabViewController.m; sourceTree = "<group>"; };
+		34EF661D216DB230009A0A4B /* ZWJTopTopicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWJTopTopicView.m; sourceTree = "<group>"; };
+		34EF661F216DB230009A0A4B /* ZWJTopTopicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWJTopTopicView.h; sourceTree = "<group>"; };
+		34EF6620216DB230009A0A4B /* ZWJTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWJTopicCell.m; sourceTree = "<group>"; };
+		34EF6621216DB230009A0A4B /* ZWJTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWJTopicCell.h; sourceTree = "<group>"; };
+		34EF6625216DB238009A0A4B /* ZWJTopicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWJTopicItem.h; sourceTree = "<group>"; };
+		34EF6626216DB238009A0A4B /* ZWJTopicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWJTopicItem.m; sourceTree = "<group>"; };
+		34EF6629216DE5DA009A0A4B /* ZWJTopicViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJTopicViewModel.h; sourceTree = "<group>"; };
+		34EF662A216DE5DA009A0A4B /* ZWJTopicViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJTopicViewModel.m; sourceTree = "<group>"; };
+		34EF662F216DF87B009A0A4B /* ZWJPictureTopicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJPictureTopicView.h; sourceTree = "<group>"; };
+		34EF6630216DF87B009A0A4B /* ZWJPictureTopicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJPictureTopicView.m; sourceTree = "<group>"; };
+		34EF6632216DF896009A0A4B /* ZWJTopTopicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJTopTopicView.xib; sourceTree = "<group>"; };
+		34EF6634216DFA90009A0A4B /* ZWJPictureTopicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJPictureTopicView.xib; sourceTree = "<group>"; };
+		34EF6639216DFE4E009A0A4B /* ZWJBaseTopicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJBaseTopicView.h; sourceTree = "<group>"; };
+		34EF663A216DFE4E009A0A4B /* ZWJBaseTopicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJBaseTopicView.m; sourceTree = "<group>"; };
+		34EF663C216E2252009A0A4B /* ZWJVideoTopicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJVideoTopicView.h; sourceTree = "<group>"; };
+		34EF663D216E2252009A0A4B /* ZWJVideoTopicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJVideoTopicView.m; sourceTree = "<group>"; };
+		34EF663F216E2279009A0A4B /* ZWJVoiceTopicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJVoiceTopicView.h; sourceTree = "<group>"; };
+		34EF6640216E2279009A0A4B /* ZWJVoiceTopicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJVoiceTopicView.m; sourceTree = "<group>"; };
+		34EF6642216E2293009A0A4B /* ZWJVideoTopicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJVideoTopicView.xib; sourceTree = "<group>"; };
+		34EF6644216E229C009A0A4B /* ZWJVoiceTopicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJVoiceTopicView.xib; sourceTree = "<group>"; };
 		3589AB4A57AD9CD2F94CB1E6 /* Pods-BuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
 		AE0FD88E6286397DA883A92C /* Pods-BuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.release.xcconfig"; sourceTree = "<group>"; };
 		DECA4F13BD8F6CE623DAFAD5 /* libPods-BuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -266,6 +298,7 @@
 		340330FF2165A8E10024FF7F /* Essence(精华) */ = {
 			isa = PBXGroup;
 			children = (
+				34EF6628216DE59D009A0A4B /* ViewModel */,
 				340331002165A8E10024FF7F /* Controller */,
 				340331012165A8E10024FF7F /* Model */,
 				340331022165A8E10024FF7F /* View */,
@@ -286,6 +319,8 @@
 		340331012165A8E10024FF7F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				34EF6625216DB238009A0A4B /* ZWJTopicItem.h */,
+				34EF6626216DB238009A0A4B /* ZWJTopicItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,6 +328,9 @@
 		340331022165A8E10024FF7F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				34EF661C216DB230009A0A4B /* CellChildView */,
+				34EF6621216DB230009A0A4B /* ZWJTopicCell.h */,
+				34EF6620216DB230009A0A4B /* ZWJTopicCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -612,6 +650,36 @@
 			path = "Base(基类)";
 			sourceTree = "<group>";
 		};
+		34EF661C216DB230009A0A4B /* CellChildView */ = {
+			isa = PBXGroup;
+			children = (
+				34EF661F216DB230009A0A4B /* ZWJTopTopicView.h */,
+				34EF661D216DB230009A0A4B /* ZWJTopTopicView.m */,
+				34EF6632216DF896009A0A4B /* ZWJTopTopicView.xib */,
+				34EF662F216DF87B009A0A4B /* ZWJPictureTopicView.h */,
+				34EF6630216DF87B009A0A4B /* ZWJPictureTopicView.m */,
+				34EF6634216DFA90009A0A4B /* ZWJPictureTopicView.xib */,
+				34EF6639216DFE4E009A0A4B /* ZWJBaseTopicView.h */,
+				34EF663A216DFE4E009A0A4B /* ZWJBaseTopicView.m */,
+				34EF663C216E2252009A0A4B /* ZWJVideoTopicView.h */,
+				34EF663D216E2252009A0A4B /* ZWJVideoTopicView.m */,
+				34EF6642216E2293009A0A4B /* ZWJVideoTopicView.xib */,
+				34EF663F216E2279009A0A4B /* ZWJVoiceTopicView.h */,
+				34EF6640216E2279009A0A4B /* ZWJVoiceTopicView.m */,
+				34EF6644216E229C009A0A4B /* ZWJVoiceTopicView.xib */,
+			);
+			path = CellChildView;
+			sourceTree = "<group>";
+		};
+		34EF6628216DE59D009A0A4B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				34EF6629216DE5DA009A0A4B /* ZWJTopicViewModel.h */,
+				34EF662A216DE5DA009A0A4B /* ZWJTopicViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D78EDD30FFA8903574AB1C89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -691,6 +759,8 @@
 				3447C7F2216AF4E70027F522 /* ZWJMeViewController.storyboard in Resources */,
 				340330F12165A7CB0024FF7F /* LaunchScreen.storyboard in Resources */,
 				3447C7DA2169F8F40027F522 /* ZWJFoollowViewController.xib in Resources */,
+				34EF6633216DF896009A0A4B /* ZWJTopTopicView.xib in Resources */,
+				34EF6643216E2293009A0A4B /* ZWJVideoTopicView.xib in Resources */,
 				3420D9A8216855820031D400 /* LaunchImage-800-667h@2x.png in Resources */,
 				3420D9A6216855820031D400 /* LaunchImage@2x.png in Resources */,
 				3420D9A7216855820031D400 /* LaunchImage-568h@2x.png in Resources */,
@@ -702,6 +772,8 @@
 				3420D9AC216855820031D400 /* LaunchImage.png in Resources */,
 				3420D99D21684B5F0031D400 /* ZWJADViewController.xib in Resources */,
 				3420D9A9216855820031D400 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				34EF6635216DFA90009A0A4B /* ZWJPictureTopicView.xib in Resources */,
+				34EF6645216E229C009A0A4B /* ZWJVoiceTopicView.xib in Resources */,
 				3447C7F7216AFFC90027F522 /* ZWJSquareCell.xib in Resources */,
 				3420D9AB216855820031D400 /* LaunchImage-700-568h@2x.png in Resources */,
 			);
@@ -762,7 +834,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3403311C2165AD1D0024FF7F /* ZWJEssenceViewController.m in Sources */,
+				34EF6624216DB230009A0A4B /* ZWJTopicCell.m in Sources */,
 				3420DA6F2168CE090031D400 /* ZWJSubTagTableViewController.m in Sources */,
+				34EF663B216DFE4E009A0A4B /* ZWJBaseTopicView.m in Sources */,
+				34EF6627216DB238009A0A4B /* ZWJTopicItem.m in Sources */,
 				3403313821660CDC0024FF7F /* UIBarButtonItem+Itme.m in Sources */,
 				340331192165A8E10024FF7F /* AppDelegate.m in Sources */,
 				34680AE4216C9658001460F6 /* ZWJVideoViewController.m in Sources */,
@@ -776,11 +851,14 @@
 				34680A71216C2DAE001460F6 /* ZWJFileManagr.m in Sources */,
 				3403313D216754250024FF7F /* ZWJINavigationController.m in Sources */,
 				3403312F2165E7510024FF7F /* UIImage+Rendering.m in Sources */,
+				34EF6622216DB230009A0A4B /* ZWJTopTopicView.m in Sources */,
 				3420D99C21684B5F0031D400 /* ZWJADViewController.m in Sources */,
 				3420D9AF2168A13B0031D400 /* AFHTTPSessionManager+Manager.m in Sources */,
+				34EF662B216DE5DA009A0A4B /* ZWJTopicViewModel.m in Sources */,
 				3420DA76216993030031D400 /* ZWJTagCell.m in Sources */,
 				34680AE7216C968D001460F6 /* ZWJVoiceViewController.m in Sources */,
 				3447C7E2216A29E40027F522 /* ZWJLogInRegisterView.m in Sources */,
+				34EF6641216E2279009A0A4B /* ZWJVoiceTopicView.m in Sources */,
 				3447C7ED216ACC3F0027F522 /* ZWJLoginField.m in Sources */,
 				3447C7F0216AEA2D0027F522 /* UITextField+Placeholder.m in Sources */,
 				34680AED216C96C9001460F6 /* ZWJTextViewController.m in Sources */,
@@ -789,9 +867,11 @@
 				3447C7F6216AFFC90027F522 /* ZWJSquareCell.m in Sources */,
 				340331472167625E0024FF7F /* UIView+Frame.m in Sources */,
 				3420D99121676CAD0031D400 /* ZWJNavigationBar.m in Sources */,
+				34EF663E216E2252009A0A4B /* ZWJVideoTopicView.m in Sources */,
 				3420DA722168D3070031D400 /* ZWJSubTagItem.m in Sources */,
 				34680AEA216C96AE001460F6 /* ZWJPictureViewController.m in Sources */,
 				340331222165ADA60024FF7F /* ZWJMeViewController.m in Sources */,
+				34EF6631216DF87B009A0A4B /* ZWJPictureTopicView.m in Sources */,
 				340331182165A8E10024FF7F /* main.m in Sources */,
 				3447C7EA216A3D680027F522 /* ZWJFastLoginButton.m in Sources */,
 				3447C7DD2169FDCE0027F522 /* ZWJLoginViewController.m in Sources */,
