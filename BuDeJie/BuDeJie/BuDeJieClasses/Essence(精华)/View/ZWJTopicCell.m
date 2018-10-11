@@ -13,6 +13,8 @@
 #import "ZWJPictureTopicView.h"
 #import "ZWJVideoTopicView.h"
 #import "ZWJVoiceTopicView.h"
+#import "ZWJCommentView.h"
+#import "ZWJBottomView.h"
 
 @interface ZWJTopicCell ()
 
@@ -20,7 +22,8 @@
 @property (nonatomic, weak) ZWJPictureTopicView *pictureView;
 @property (nonatomic, weak) ZWJVideoTopicView *videoView;
 @property (nonatomic, weak) ZWJVoiceTopicView *VoiceView;
-
+@property (nonatomic, weak) ZWJCommentView *commentView;
+@property (nonatomic, weak) ZWJBottomView *bottomView;
 
 @end
 
@@ -31,6 +34,8 @@
 // Cell比较特殊,通过initWithStyle
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self == [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        
+        [self setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"mainCellBackground"]]];
         
         //设置顶部view的内容,设置TopView高度m,设置cell的尺寸
         //顶部
@@ -56,10 +61,15 @@
         //self.Voice = Voice;
         
         //最热评论
-
+//        ZWJCommentView *commentView = [ZWJCommentView ViewForXib];
+//        [self.contentView addSubview:commentView];
+//        self.commentView = commentView;
         
         //底部
         
+        ZWJBottomView *bottomView = [ZWJBottomView ViewForXib];
+        [self.contentView addSubview:bottomView];
+        self.bottomView = bottomView;
     }
     
     return self;
@@ -103,6 +113,20 @@
         self.VoiceView.hidden =YES;
     }
     
+    //设置最热评论
+    if (vm.item.topComment) {
+        _commentView.hidden = NO;
+        self.commentView.item = vm.item;
+        self.commentView.frame = vm.middleViewFrame;
+        
+    }else {
+        _commentView.hidden = YES;
+    }
+    
+    //设置底部View
+    self.bottomView.item = vm.item;
+    self.bottomView.frame = vm.bottomViewFrame;
+    
     
 }
 
@@ -111,7 +135,9 @@
     _item = item;
     _topView.item = item;
     
-    _pictureView.frame = CGRectMake(10, 120, 355, 200);
+    self.topView.frame = CGRectMake(10, 0, 355,75);
+    self.pictureView.frame = CGRectMake(10, 120, 355, 200);
+    self.bottomView.frame = CGRectMake(10, 400, 355, 35);
     
 }
 

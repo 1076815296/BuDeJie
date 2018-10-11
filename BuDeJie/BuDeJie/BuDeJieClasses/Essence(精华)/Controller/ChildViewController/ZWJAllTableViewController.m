@@ -34,6 +34,12 @@ static NSString * const ID = @"cell";
  坏处:可读性差,维护成本高
  */
 
+/*
+ MJExtension:如果模型中嵌套模型,会自动帮你转,
+ 如果模型中有数组,数组中又有字典,就不会把字典转模型
+ 告诉MJ,数组中字典转哪个模型
+ */
+
 @interface ZWJAllTableViewController ()
 
 @property (nonatomic ,strong) NSMutableArray *topicVM;
@@ -97,7 +103,7 @@ static NSString * const ID = @"cell";
     parameters[@"a"] = @"list";
     parameters[@"c"] = @"data";
     //拿到视频的数据
-    parameters[@"type"] = @(ZWJTopicItemTypeVideo);
+    parameters[@"type"] = @(ZWJTopicItemTypeVocie);
 
     [mgr GET:ZWJBaseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
         //数字转模型
@@ -151,7 +157,7 @@ static NSString * const ID = @"cell";
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     //计算topView尺寸 =>cell尺寸
-    return 400;
+    return 445;
     
     //return [self.topics[indexPath.row] cellH];
 

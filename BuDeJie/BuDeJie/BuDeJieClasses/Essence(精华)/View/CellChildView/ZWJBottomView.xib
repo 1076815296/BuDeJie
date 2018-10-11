@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZWJBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vN-XY-fd4">
+                    <rect key="frame" x="0.0" y="0.0" width="94" height="35"/>
+                    <state key="normal" title="1000" image="mainCellDing">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeO-ck-I4j">
+                    <rect key="frame" x="94" y="0.0" width="93.5" height="35"/>
+                    <state key="normal" title="1000" image="mainCellCai">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVY-vS-2cj">
+                    <rect key="frame" x="187.5" y="0.0" width="94" height="35"/>
+                    <state key="normal" title="1000" image="mainCellShare">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3F-it-0i8">
+                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="35"/>
+                    <state key="normal" title="1000" image="mainCellComment">
+                        <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="q3F-it-0i8" secondAttribute="trailing" id="5we-oq-1rO"/>
+                <constraint firstItem="q3F-it-0i8" firstAttribute="height" secondItem="aVY-vS-2cj" secondAttribute="height" id="7zE-AF-kkh"/>
+                <constraint firstItem="q3F-it-0i8" firstAttribute="width" secondItem="aVY-vS-2cj" secondAttribute="width" id="8Ac-by-R99"/>
+                <constraint firstItem="6vN-XY-fd4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8rM-4i-QBD"/>
+                <constraint firstItem="aVY-vS-2cj" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="FSj-cG-eNL"/>
+                <constraint firstItem="aVY-vS-2cj" firstAttribute="width" secondItem="oeO-ck-I4j" secondAttribute="width" id="Hb9-Eu-msO"/>
+                <constraint firstItem="q3F-it-0i8" firstAttribute="leading" secondItem="aVY-vS-2cj" secondAttribute="trailing" id="Inh-CT-dxD"/>
+                <constraint firstItem="aVY-vS-2cj" firstAttribute="height" secondItem="oeO-ck-I4j" secondAttribute="height" id="U9g-oC-bXq"/>
+                <constraint firstItem="q3F-it-0i8" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="V7C-cE-YTW"/>
+                <constraint firstItem="6vN-XY-fd4" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="WWc-hw-a5x"/>
+                <constraint firstItem="oeO-ck-I4j" firstAttribute="height" secondItem="6vN-XY-fd4" secondAttribute="height" id="Y30-Ah-APb"/>
+                <constraint firstItem="aVY-vS-2cj" firstAttribute="leading" secondItem="oeO-ck-I4j" secondAttribute="trailing" id="bPj-Pf-xMu"/>
+                <constraint firstItem="oeO-ck-I4j" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="kay-bi-W3L"/>
+                <constraint firstItem="oeO-ck-I4j" firstAttribute="leading" secondItem="6vN-XY-fd4" secondAttribute="trailing" id="lNP-rW-fUM"/>
+                <constraint firstItem="6vN-XY-fd4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="rZ3-Bz-72V"/>
+                <constraint firstItem="oeO-ck-I4j" firstAttribute="width" secondItem="6vN-XY-fd4" secondAttribute="width" id="swL-Ip-3vN"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="caiView" destination="oeO-ck-I4j" id="uaA-Oq-B8p"/>
+                <outlet property="commentView" destination="q3F-it-0i8" id="2nG-oQ-CSD"/>
+                <outlet property="dingView" destination="6vN-XY-fd4" id="djl-tg-IWC"/>
+                <outlet property="shareView" destination="aVY-vS-2cj" id="Dwi-WN-5Nt"/>
+            </connections>
+            <point key="canvasLocation" x="220" y="132"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mainCellCai" width="20" height="20"/>
+        <image name="mainCellComment" width="20" height="20"/>
+        <image name="mainCellDing" width="20" height="20"/>
+        <image name="mainCellShare" width="20" height="20"/>
+    </resources>
+</document>

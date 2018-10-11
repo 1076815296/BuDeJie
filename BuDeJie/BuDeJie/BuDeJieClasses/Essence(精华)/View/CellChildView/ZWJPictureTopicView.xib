@@ -40,7 +40,7 @@
                         <constraint firstAttribute="height" constant="31" id="q71-QD-lRQ"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR6-gV-Pci">
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VR6-gV-Pci">
                     <rect key="frame" x="0.0" y="160" width="375" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="H2f-Uu-lAr"/>

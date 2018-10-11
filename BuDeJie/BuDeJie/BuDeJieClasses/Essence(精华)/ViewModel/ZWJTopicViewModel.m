@@ -8,6 +8,7 @@
 
 #import "ZWJTopicViewModel.h"
 #import "ZWJTopicItem.h"
+#import "ZWJCommentItem.h"
 
 @implementation ZWJTopicViewModel
 
@@ -19,7 +20,7 @@
     CGFloat topW = ZWJScreenW;
     CGFloat margin = 10;
     CGFloat textY = 55;
-    CGFloat textW = ZWJScreenW - margin;
+    CGFloat textW = ZWJScreenW - margin * 2;
     CGFloat textH = [item.text sizeWithFont:[UIFont systemFontOfSize:17] constrainedToSize:CGSizeMake(textW, MAXFLOAT)].height;
     CGFloat topH = textY + textH;
     
@@ -40,7 +41,28 @@
         self.middleViewFrame = CGRectMake(middleX, middleY, middleW, middleH);
         _cellH = CGRectGetMaxY(self.middleViewFrame) + margin;
     }
-   
+    
+    //最热评论view
+    if (item.topComment) {
+        CGFloat commentX = 0;
+        CGFloat commentY = _cellH;
+        CGFloat commentW = ZWJScreenW;
+        CGFloat commentH = 43;
+        if (item.topComment.content.length) {
+            CGFloat textH = [item.topComment.totalContent sizeWithFont:[UIFont systemFontOfSize:17] constrainedToSize:CGSizeMake(textW, MAXFLOAT)].height;
+            commentH = 21 + textH;
+        }
+        self.commentViewFrame = CGRectMake(commentX, commentY, commentW, commentH);
+        _cellH = CGRectGetMaxY(self.commentViewFrame) + margin;
+    }
+    
+    //底部的view
+    CGFloat bottomX = 0;
+    CGFloat bottomY = _cellH;
+    CGFloat bottomW = ZWJScreenW;
+    CGFloat bottomH = 35;
+    self.bottomViewFrame = CGRectMake(bottomX, bottomY, bottomW, bottomH);
+    _cellH = CGRectGetMaxY(self.bottomViewFrame) + margin;
 }
 
 @end

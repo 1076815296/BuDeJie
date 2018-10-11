@@ -72,6 +72,15 @@
 		34EF6641216E2279009A0A4B /* ZWJVoiceTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF6640216E2279009A0A4B /* ZWJVoiceTopicView.m */; };
 		34EF6643216E2293009A0A4B /* ZWJVideoTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EF6642216E2293009A0A4B /* ZWJVideoTopicView.xib */; };
 		34EF6645216E229C009A0A4B /* ZWJVoiceTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EF6644216E229C009A0A4B /* ZWJVoiceTopicView.xib */; };
+		34EF6648216ECE06009A0A4B /* ZWJCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF6647216ECE06009A0A4B /* ZWJCommentView.m */; };
+		34EF664A216ECE26009A0A4B /* ZWJCommentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EF6649216ECE26009A0A4B /* ZWJCommentView.xib */; };
+		34EF664D216ED7D8009A0A4B /* ZWJCommentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF664C216ED7D8009A0A4B /* ZWJCommentItem.m */; };
+		34EF6650216EDC55009A0A4B /* ZWJUserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF664F216EDC55009A0A4B /* ZWJUserItem.m */; };
+		34EF6654216EEE52009A0A4B /* ZWJBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF6653216EEE52009A0A4B /* ZWJBottomView.m */; };
+		34EF6656216EEE65009A0A4B /* ZWJBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EF6655216EEE65009A0A4B /* ZWJBottomView.xib */; };
+		34EF6659216F314C009A0A4B /* NSDate+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF6658216F314C009A0A4B /* NSDate+Date.m */; };
+		34EF665D216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34EF665B216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.m */; };
+		34EF665E216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34EF665C216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -185,6 +194,21 @@
 		34EF6640216E2279009A0A4B /* ZWJVoiceTopicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJVoiceTopicView.m; sourceTree = "<group>"; };
 		34EF6642216E2293009A0A4B /* ZWJVideoTopicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJVideoTopicView.xib; sourceTree = "<group>"; };
 		34EF6644216E229C009A0A4B /* ZWJVoiceTopicView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJVoiceTopicView.xib; sourceTree = "<group>"; };
+		34EF6646216ECE06009A0A4B /* ZWJCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJCommentView.h; sourceTree = "<group>"; };
+		34EF6647216ECE06009A0A4B /* ZWJCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJCommentView.m; sourceTree = "<group>"; };
+		34EF6649216ECE26009A0A4B /* ZWJCommentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJCommentView.xib; sourceTree = "<group>"; };
+		34EF664B216ED7D8009A0A4B /* ZWJCommentItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJCommentItem.h; sourceTree = "<group>"; };
+		34EF664C216ED7D8009A0A4B /* ZWJCommentItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJCommentItem.m; sourceTree = "<group>"; };
+		34EF664E216EDC55009A0A4B /* ZWJUserItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJUserItem.h; sourceTree = "<group>"; };
+		34EF664F216EDC55009A0A4B /* ZWJUserItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJUserItem.m; sourceTree = "<group>"; };
+		34EF6652216EEE52009A0A4B /* ZWJBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJBottomView.h; sourceTree = "<group>"; };
+		34EF6653216EEE52009A0A4B /* ZWJBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJBottomView.m; sourceTree = "<group>"; };
+		34EF6655216EEE65009A0A4B /* ZWJBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJBottomView.xib; sourceTree = "<group>"; };
+		34EF6657216F314C009A0A4B /* NSDate+Date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Date.h"; sourceTree = "<group>"; };
+		34EF6658216F314C009A0A4B /* NSDate+Date.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Date.m"; sourceTree = "<group>"; };
+		34EF665A216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWJSeeBigPictureViewController.h; sourceTree = "<group>"; };
+		34EF665B216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWJSeeBigPictureViewController.m; sourceTree = "<group>"; };
+		34EF665C216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZWJSeeBigPictureViewController.xib; sourceTree = "<group>"; };
 		3589AB4A57AD9CD2F94CB1E6 /* Pods-BuDeJie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.debug.xcconfig"; sourceTree = "<group>"; };
 		AE0FD88E6286397DA883A92C /* Pods-BuDeJie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuDeJie.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuDeJie/Pods-BuDeJie.release.xcconfig"; sourceTree = "<group>"; };
 		DECA4F13BD8F6CE623DAFAD5 /* libPods-BuDeJie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuDeJie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,6 +336,9 @@
 				34680ADE216C955C001460F6 /* ChildViewController */,
 				3403311A2165AD1D0024FF7F /* ZWJEssenceViewController.h */,
 				3403311B2165AD1D0024FF7F /* ZWJEssenceViewController.m */,
+				34EF665A216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.h */,
+				34EF665B216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.m */,
+				34EF665C216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -321,6 +348,10 @@
 			children = (
 				34EF6625216DB238009A0A4B /* ZWJTopicItem.h */,
 				34EF6626216DB238009A0A4B /* ZWJTopicItem.m */,
+				34EF664B216ED7D8009A0A4B /* ZWJCommentItem.h */,
+				34EF664C216ED7D8009A0A4B /* ZWJCommentItem.m */,
+				34EF664E216EDC55009A0A4B /* ZWJUserItem.h */,
+				34EF664F216EDC55009A0A4B /* ZWJUserItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -520,6 +551,8 @@
 				3420D9AE2168A13B0031D400 /* AFHTTPSessionManager+Manager.m */,
 				3447C7EE216AEA2D0027F522 /* UITextField+Placeholder.h */,
 				3447C7EF216AEA2D0027F522 /* UITextField+Placeholder.m */,
+				34EF6657216F314C009A0A4B /* NSDate+Date.h */,
+				34EF6658216F314C009A0A4B /* NSDate+Date.m */,
 			);
 			path = "Category(类别)";
 			sourceTree = "<group>";
@@ -667,6 +700,12 @@
 				34EF663F216E2279009A0A4B /* ZWJVoiceTopicView.h */,
 				34EF6640216E2279009A0A4B /* ZWJVoiceTopicView.m */,
 				34EF6644216E229C009A0A4B /* ZWJVoiceTopicView.xib */,
+				34EF6646216ECE06009A0A4B /* ZWJCommentView.h */,
+				34EF6647216ECE06009A0A4B /* ZWJCommentView.m */,
+				34EF6649216ECE26009A0A4B /* ZWJCommentView.xib */,
+				34EF6652216EEE52009A0A4B /* ZWJBottomView.h */,
+				34EF6653216EEE52009A0A4B /* ZWJBottomView.m */,
+				34EF6655216EEE65009A0A4B /* ZWJBottomView.xib */,
 			);
 			path = CellChildView;
 			sourceTree = "<group>";
@@ -759,6 +798,7 @@
 				3447C7F2216AF4E70027F522 /* ZWJMeViewController.storyboard in Resources */,
 				340330F12165A7CB0024FF7F /* LaunchScreen.storyboard in Resources */,
 				3447C7DA2169F8F40027F522 /* ZWJFoollowViewController.xib in Resources */,
+				34EF664A216ECE26009A0A4B /* ZWJCommentView.xib in Resources */,
 				34EF6633216DF896009A0A4B /* ZWJTopTopicView.xib in Resources */,
 				34EF6643216E2293009A0A4B /* ZWJVideoTopicView.xib in Resources */,
 				3420D9A8216855820031D400 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -771,7 +811,9 @@
 				3420D9AA216855820031D400 /* LaunchImage-700@2x.png in Resources */,
 				3420D9AC216855820031D400 /* LaunchImage.png in Resources */,
 				3420D99D21684B5F0031D400 /* ZWJADViewController.xib in Resources */,
+				34EF665E216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.xib in Resources */,
 				3420D9A9216855820031D400 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				34EF6656216EEE65009A0A4B /* ZWJBottomView.xib in Resources */,
 				34EF6635216DFA90009A0A4B /* ZWJPictureTopicView.xib in Resources */,
 				34EF6645216E229C009A0A4B /* ZWJVoiceTopicView.xib in Resources */,
 				3447C7F7216AFFC90027F522 /* ZWJSquareCell.xib in Resources */,
@@ -834,13 +876,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				3403311C2165AD1D0024FF7F /* ZWJEssenceViewController.m in Sources */,
+				34EF6648216ECE06009A0A4B /* ZWJCommentView.m in Sources */,
 				34EF6624216DB230009A0A4B /* ZWJTopicCell.m in Sources */,
 				3420DA6F2168CE090031D400 /* ZWJSubTagTableViewController.m in Sources */,
 				34EF663B216DFE4E009A0A4B /* ZWJBaseTopicView.m in Sources */,
+				34EF6659216F314C009A0A4B /* NSDate+Date.m in Sources */,
 				34EF6627216DB238009A0A4B /* ZWJTopicItem.m in Sources */,
 				3403313821660CDC0024FF7F /* UIBarButtonItem+Itme.m in Sources */,
 				340331192165A8E10024FF7F /* AppDelegate.m in Sources */,
 				34680AE4216C9658001460F6 /* ZWJVideoViewController.m in Sources */,
+				34EF665D216F3CE5009A0A4B /* ZWJSeeBigPictureViewController.m in Sources */,
 				340331442167586D0024FF7F /* ZWJStetupTableViewController.m in Sources */,
 				3447C7D72169F8C40027F522 /* ZWJFoollowViewController.m in Sources */,
 				34680A66216B3AA2001460F6 /* ZWJSquareItem.m in Sources */,
@@ -853,9 +898,12 @@
 				3403312F2165E7510024FF7F /* UIImage+Rendering.m in Sources */,
 				34EF6622216DB230009A0A4B /* ZWJTopTopicView.m in Sources */,
 				3420D99C21684B5F0031D400 /* ZWJADViewController.m in Sources */,
+				34EF6654216EEE52009A0A4B /* ZWJBottomView.m in Sources */,
 				3420D9AF2168A13B0031D400 /* AFHTTPSessionManager+Manager.m in Sources */,
 				34EF662B216DE5DA009A0A4B /* ZWJTopicViewModel.m in Sources */,
 				3420DA76216993030031D400 /* ZWJTagCell.m in Sources */,
+				34EF664D216ED7D8009A0A4B /* ZWJCommentItem.m in Sources */,
+				34EF6650216EDC55009A0A4B /* ZWJUserItem.m in Sources */,
 				34680AE7216C968D001460F6 /* ZWJVoiceViewController.m in Sources */,
 				3447C7E2216A29E40027F522 /* ZWJLogInRegisterView.m in Sources */,
 				34EF6641216E2279009A0A4B /* ZWJVoiceTopicView.m in Sources */,

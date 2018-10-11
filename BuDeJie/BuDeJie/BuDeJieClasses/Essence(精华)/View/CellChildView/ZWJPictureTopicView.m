@@ -10,6 +10,7 @@
 #import "ZWJTopicItem.h"
 #import <UIImageView+WebCache.h>
 #import <DALabeledCircularProgressView.h>
+#import "ZWJSeeBigPictureViewController.h"
 
 @interface ZWJPictureTopicView ()
 @property (weak, nonatomic) IBOutlet UIImageView *gifView;
@@ -29,6 +30,17 @@
     self.progressView.progressTintColor = [UIColor whiteColor];
     self.progressView.trackTintColor = [UIColor lightGrayColor];
     self.progressView.roundedCorners = 5;
+    
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    NSLog(@"点击了图片");
+    //弹出查看大图的view在
+    ZWJSeeBigPictureViewController *seeVC = [[ZWJSeeBigPictureViewController alloc] init];
+    seeVC.item = self.item;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:seeVC animated:YES completion:nil];
+    
 }
 
 
