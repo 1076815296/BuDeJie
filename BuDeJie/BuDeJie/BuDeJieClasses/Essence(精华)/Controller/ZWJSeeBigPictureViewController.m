@@ -12,6 +12,8 @@
 #import <SDImageCache.h>
 #import <SVProgressHUD.h>
 #import <Photos/Photos.h>
+#import "ZWJPhotoManager.h"
+
 
 #define ZWJAlbumTitle @"百思不得姐19"
 
@@ -35,11 +37,7 @@
  
  */
 /*
- PHPhotoLibrary:共享对象，管理用户共享照片库的访问和更改
- PHAsset:图片
- PHAssetCollection:相册,所有相片的一个集合
- PHAssetChangeRequest:创建修改删除图片的
- PHAssetCollectionChangeRequest:创建修改删除相册的
+ 
 */
 
 
@@ -110,12 +108,24 @@
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             //授权完成调用
             if(status == PHAuthorizationStatusAuthorized){
-                [self savaPhoto];
+                [ZWJPhotoManager savePhoto:self.imageView.image albumTitle:ZWJAlbumTitle completionHandler:^(BOOL success, NSError * _Nonnull error) {
+                    if (error) {
+                        [SVProgressHUD showErrorWithStatus:@"保存失败"];
+                    }else{
+                        [SVProgressHUD showErrorWithStatus:@"保存成功"];
+                    }
+                }];
             }
         }];
         
     }else if (status == PHAuthorizationStatusAuthorized ){
-        [self savaPhoto];
+        [ZWJPhotoManager savePhoto:self.imageView.image albumTitle:ZWJAlbumTitle completionHandler:^(BOOL success, NSError * _Nonnull error) {
+            if (error) {
+                [SVProgressHUD showErrorWithStatus:@"保存失败"];
+            }else{
+                [SVProgressHUD showErrorWithStatus:@"保存成功"];
+            }
+        }];
     }else {
         //拒绝
         //提示用户去打开授权
@@ -131,48 +141,10 @@
 
 //保存图片
 - (void)savaPhoto{
-    [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-        
-        //判断之前有没有相册,获取之前相册
-        PHAssetCollection *assetcollection = [self fetchAssetColletion:ZWJAlbumTitle];
-        PHAssetCollectionChangeRequest *assetCollectionChangeRequest;
-        if (assetcollection) {
-            //已有相册
-            assetCollectionChangeRequest = [PHAssetCollectionChangeRequest changeRequestForAssetCollection:assetcollection]; 
-        }else{
-            //创建自定义相册
-            //1.创建自定义相册
-            assetCollectionChangeRequest = [PHAssetCollectionChangeRequest creationRequestForAssetCollectionWithTitle:ZWJAlbumTitle];
-        }
-        
-        
-        
-        //2.添加图片到系统的相册
-        PHAssetChangeRequest *assetChangeRequest = [PHAssetChangeRequest creationRequestForAssetFromImage:self.imageView.image];
-       
-        //3.把创建好的图片添加到自己的相册中
-        PHObjectPlaceholder *placeholder = [assetChangeRequest placeholderForCreatedAsset];
-
-        [assetCollectionChangeRequest addAssets:@[placeholder]];
-        
-    } completionHandler:^(BOOL success, NSError * _Nullable error) {
-        
-    }];
-}
-
-#pragma mark -----------------------
-#pragma mark 获取之前的相册
-- (PHFetchResult *)fetchAssetColletion:(NSString *)albumTitle {
-    //获取之前的相册
-    PHFetchResult *result = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
     
-    for (PHAssetCollection *assetCollection in result) {
-        if ([assetCollection.localizedTitle isEqualToString:albumTitle]) {
-            return result;
-        }
-    }
-    return nil;
 }
+
+
 
 
 #pragma mark -----------------------

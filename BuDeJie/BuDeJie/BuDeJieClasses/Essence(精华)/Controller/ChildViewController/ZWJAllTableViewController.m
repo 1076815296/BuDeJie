@@ -11,6 +11,9 @@
 #import "ZWJTopicItem.h"
 #import <MJExtension/MJExtension.h>
 #import "ZWJTopicViewModel.h"
+#import "ZWJFootRefreshView.h"
+#import "ZWJHeaderRefreshView.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 static NSString * const ID = @"cell";
 
@@ -44,10 +47,24 @@ static NSString * const ID = @"cell";
 
 @property (nonatomic ,strong) NSMutableArray *topicVM;
 @property (nonatomic, strong) ZWJTopicItem *item;
+@property (nonatomic, weak) ZWJFootRefreshView *footView;
+@property (nonatomic, strong) NSString *maxtime;
+@property (nonatomic, weak) ZWJHeaderRefreshView *headerView;
+@property (nonatomic, assign) UIEdgeInsets oriInset;
+@property (nonatomic, weak) AFHTTPSessionManager *mgr;
 
 @end
 
 @implementation ZWJAllTableViewController
+
+- (AFHTTPSessionManager *)mgr{
+    
+    if (_mgr == nil) {
+        _mgr = [AFHTTPSessionManager zwj_manager];
+    }
+    return _mgr;
+    
+}
 
 - (NSMutableArray *)topicVM {
     
@@ -78,41 +95,153 @@ static NSString * const ID = @"cell";
     [super viewDidLoad];
     
     
-    
-    
-    
    
     //只要通过registerClass,Cell就是通过initWithStyle创建的
     [self.tableView registerClass:[ZWJTopicCell class] forCellReuseIdentifier:ID];
     //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
     
     //请求数据
-    //[self loadView];
+    //[self loadNewData];
     
     [self.tableView reloadData];
     
+    //添加上拉刷新控件 => 1.footView 2.完全显示的时候才需要刷新数据
+    [self setupFootRefreshView];
+    
+    //添加下拉刷新控件
+    [self setupHeaderRefreshView];
+    
+    //滚动指示器的设置
+    self.tableView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 150, 0);
+    
+    _oriInset = UIEdgeInsetsMake(0, 0, 150, 0);
    
 }
 
-//请求数据
-/*- (void)loadView{
+//添加下来刷新控件 => 最好不要使用headerView ,下拉控件显示到最上面
+- (void)setupHeaderRefreshView{
+    
+    ZWJHeaderRefreshView *headerView =[ZWJHeaderRefreshView headerView];
+    _headerView = headerView;
+    headerView.zwj_y = -headerView.zwj_height;
+    
+    [self.tableView addSubview:headerView];
+    
+}
 
-    AFHTTPSessionManager *mgr = [AFHTTPSessionManager zwj_manager];
+// 添加一个上拉刷新控件
+// 如果发现一个view从xib加载尺寸不对,截图尝试取消自动拉伸
+// bug:一开始也显示了
+- (void)setupFootRefreshView{
+    
+    ZWJFootRefreshView *footView = [ZWJFootRefreshView footView];
+    self.footView = footView;
+    self.tableView.tableFooterView = footView;
+    
+}
 
+#pragma mark - 滚动的时候就调用
+//松开手指就会调用
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    
+    //判断是否刷新数据
+    if (_headerView.isNeedLoad) {
+    
+        _headerView.isRefreshing = YES;
+        
+        //悬停:设置顶部的额外的滚动区域
+        [UIView animateWithDuration:0.25 animations:^{
+            self.tableView.contentInset = UIEdgeInsetsMake(self.oriInset.top + self.headerView.zwj_height, 0, self.oriInset.bottom, 0);
+        }];
+       
+        
+        //刷新数据
+        //[self loadNewData];
+        
+        _headerView.isNeedLoad = NO;
+    }
+    
+}
+
+//滚动的时候就调用
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    
+    //处理上拉控件
+    [self dealFootReshViewScroll:scrollView];
+    //处理下拉控件
+    [self dealHeaderRefViewScroll:scrollView];
+    
+}
+
+/** 处理下拉控件 */
+- (void)dealHeaderRefViewScroll:(UIScrollView *)scrollView{
+    
+    //判断下拉控件什么时候完全显示
+    CGFloat offsetY = scrollView.contentOffset.y;
+    
+    
+    if (offsetY <= -scrollView.contentInset.bottom + _headerView.zwj_height) {
+        
+        _headerView.isNeedLoad = YES;
+        
+    }else{
+        _headerView.isNeedLoad = NO;
+    }
+    
+}
+
+
+/** 处理上拉控件 */
+- (void)dealFootReshViewScroll:(UIScrollView *)scrollView{
+    //没有数据的时候
+    //if (self.topicVM.count == 0) return;
+    //判断当前有没有真在刷新
+    if (self.footView.isRefreshing == YES) return;
+    
+    //判断有没有完全显示上拉刷新控件
+    CGFloat offsetY = scrollView.contentOffset.y;
+    
+    if(offsetY >= scrollView.contentSize.height + scrollView.contentInset.bottom - ZWJScreenH){
+        self.footView.isRefreshing = YES;
+        //刷新更多数据
+        [self loadMoreData];
+        
+    }
+}
+
+
+/*
+ 
+ 上下拉刷新的冲突问题 取消之前的请求
+ 
+ */
+
+#pragma mark -加载更多数据
+- (void)loadMoreData{
+    
+    //取消之前的请求
+   
+    [self.mgr.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"list";
     parameters[@"c"] = @"data";
-    //拿到视频的数据
+    parameters[@"mantime"] =  _maxtime;
     parameters[@"type"] = @(ZWJTopicItemTypeVocie);
-
-    [mgr GET:ZWJBaseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+    [self.mgr GET:ZWJBaseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        //加载完成
+        self.footView.isRefreshing = NO;
+        
+        //保存下一页最大的ID
+        self.maxtime = responseObject[@"info"][@"mantime"];
+        
         //数字转模型
-       NSArray* topics = [ZWJTopicItem mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-
-       //计算topView尺寸 =>cell尺寸
+        NSArray* topics = [ZWJTopicItem mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        
+        //计算topView尺寸 =>cell尺寸
         //模型转视图模型
         for (ZWJTopicItem *item in topics) {
-           //MVVM
+            //MVVM
             ZWJTopicViewModel *vm = [[ZWJTopicViewModel alloc] init];
             //计算cell的高度和子控件尺寸
             vm.item = item;
@@ -120,6 +249,54 @@ static NSString * const ID = @"cell";
             
             
         }
+        
+        //刷新表格
+        [self.tableView reloadData];
+
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        self.footView.isRefreshing = NO;
+        [SVProgressHUD showErrorWithStatus:@"加载错误"];
+    }];
+    
+}
+
+
+//请求数据
+/*- (void)loadNewData{
+
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"a"] = @"list";
+    parameters[@"c"] = @"data";
+    //拿到视频的数据
+    parameters[@"type"] = @(ZWJTopicItemTypeVocie);
+
+    [self.mgr GET:ZWJBaseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * _Nullable responseObject) {
+ 
+        [UIView animateWithDuration:0.25 animations:^{
+            self.tableView.contentInset = _oriInset;
+        }];
+ 
+        _headerView.isRefreshing = NO;
+ 
+        //保存下一页最大的ID
+        _maxtime = responseObject[@"info"][@"mantime"];
+ 
+        //数字转模型
+       NSArray* topics = [ZWJTopicItem mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+
+       //计算topView尺寸 =>cell尺寸
+        //模型转视图模型
+        NSMutableArray *arr = [NSMutableArray array];
+        for (ZWJTopicItem *item in topics) {
+           //MVVM
+            ZWJTopicViewModel *vm = [[ZWJTopicViewModel alloc] init];
+            //计算cell的高度和子控件尺寸
+            vm.item = item;
+            [arr addObject:vm];
+        }
+        self.topicsVM =arr;
 
         //刷新表格
         [self.tableView reloadData];

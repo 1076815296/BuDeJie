@@ -20,6 +20,7 @@ static NSString * const ID = @"cell";
 @property (nonatomic, assign) BOOL isInitial;
 
 
+
 @end
 
 @implementation ZWJBaseTabViewController
@@ -41,17 +42,13 @@ static NSString * const ID = @"cell";
     
     //self.navigationController.navigationBarHidden = YES;
     
-    
-    
     //添加底部内容View
     [self setupBottomCotaninerView];
     
     //添加顶部内容View
     [self setupTopTitleView];
     
-    
-    
-    
+
     
     
 }
@@ -77,7 +74,7 @@ static NSString * const ID = @"cell";
     
     //滚动对应的位置
     CGFloat offstX = i * ZWJScreenW;
-    self.bottomCollectionView.contentOffset = CGPointMake(offstX, 0);
+    self.bottomCollectionView.contentOffset = CGPointMake(offstX, -64);
     
     
     
@@ -131,7 +128,6 @@ static NSString * const ID = @"cell";
             underLine.zwj_height = 2;
             underLine.zwj_centerX = btn.zwj_centerX;
             underLine.zwj_y = self.topScrollView.zwj_height - underLine.zwj_height;
-            
             
             [self titleClick:btn];
         }
@@ -202,6 +198,7 @@ static NSString * const ID = @"cell";
         self.underLine.zwj_centerX = button.zwj_centerX;
     }];
     
+    
 }
 
 
@@ -228,14 +225,16 @@ static NSString * const ID = @"cell";
     //切换子控制器view
     UITableViewController *vc = self.childViewControllers[indexPath.row];
     
+    
+    
     //不让tableView被挡住
-    vc.tableView.contentInset = UIEdgeInsetsMake(64 + self.topScrollView.zwj_height, 0, 49, 0);
-    //控制器尺寸一开始不对,调整尺寸
-    vc.view.frame = [UIScreen mainScreen].bounds;
+    vc.view.frame = CGRectMake(0, 92, ZWJScreenW, [UIScreen mainScreen].bounds.size.height);
+    vc.tableView.contentInset = UIEdgeInsetsMake(0, 0, 92, 0);
+    
+    
     
     [cell.contentView addSubview:vc.view];
     
-    //    cell.backgroundColor = ZWJColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256));
     
     
     
